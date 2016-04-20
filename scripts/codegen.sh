@@ -11,7 +11,6 @@ java -jar $PROJECTDIR/../../swagger-codegen/modules/swagger-codegen-cli/target/s
   -o $PROJECTDIR \
   -c $BASEDIR/codegen.config | tee build.log
 
-sed -i '.bak' 's/lts-3.17/nightly-2016-03-30/' $PROJECTDIR/stack.yaml
 sed -i '.bak' 's/, Openshift.OapivApi/, Openshift.OapivApi, Openshift.Any/' $PROJECTDIR/openshift-v1-rest.cabal
 
 cp $BASEDIR/*.hs $PROJECTDIR/lib/Openshift/
