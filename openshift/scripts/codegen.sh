@@ -15,7 +15,7 @@ CABAL_FILE=$PROJECTDIR/openshift-v1-rest.cabal
 
 sed -i '.bak' 's/, Openshift.OapivApi/, Openshift.OapivApi, Openshift.ClientUtils, Openshift.Any/' $CABAL_FILE
 
-sed -i '.bak' 's/, servant-client/, servant-client, http-client-tls, connection, kubernetes-v1-rest/' $CABAL_FILE
+sed -i '.bak' 's/, servant-client/, servant-client, http-client-tls, connection, transformers, kubernetes-v1-rest/' $CABAL_FILE
 
 cp $BASEDIR/*.hs $PROJECTDIR/lib/Openshift/
 

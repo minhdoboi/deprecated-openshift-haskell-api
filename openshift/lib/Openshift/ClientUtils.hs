@@ -1,7 +1,8 @@
 module Openshift.ClientUtils (
   OpenshiftClientContext(..),
   getEnvOpenshiftClientContext,
-  withOpenshiftCtx) where
+  withOpenshiftCtx,
+  withOpenshiftCtxIO) where
 
 import Network.HTTP.Client (Manager, newManager)
 import Network.HTTP.Client.TLS
@@ -11,7 +12,9 @@ import Text.Read
 import Data.Text hiding (map)
 import Data.Maybe
 import Servant.API
+import Servant.Client
 import Servant.Common.BaseUrl
+import Control.Monad.Trans.Except (ExceptT, runExceptT)
 
 data OpenshiftClientContext = OpenshiftClientContext {
   tokenBearer :: Text,
@@ -35,3 +38,10 @@ getEnvOpenshiftClientContext = do
 
 withOpenshiftCtx :: OpenshiftClientContext -> (Maybe Text -> Manager -> BaseUrl -> a) -> a
 withOpenshiftCtx ctx f = f (Just $ tokenBearer ctx) (manager ctx) (baseUrl ctx)
+
+withOpenshiftCtxIO :: OpenshiftClientContext -> (Maybe Text -> Manager -> BaseUrl -> ExceptT ServantError IO a) -> IO a
+withOpenshiftCtxIO ctx f = do
+  res <- runExceptT $ withOpenshiftCtx ctx f
+  case res of
+    Left err -> fail $ "Error: " ++ show err
+    Right r -> return r
