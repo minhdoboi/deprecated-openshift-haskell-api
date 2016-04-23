@@ -10,11 +10,14 @@ The only thing I tested is listing the projects (cf example which is not working
 
 0. Install haskell-stack
 1. stack build
+2. run
 
-# Swagger Codegen customizations
+``` export OPENSHIFT_HOST=myhost && export OPENSHIFT_TOKEN=`oc whoami -t` && $HOME/.local/bin/example-openshift-client ```
+
+## Swagger Codegen customizations
 - v1.XXX => V1/XXX.hs
 - non required property are wrapped in Maybe
 - a parameter has been added for header token bearer
 
-# Hacks
+## Hacks
 There are some hacks in scripts/codegen.sh and it needs probably a few more hacks.
