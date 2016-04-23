@@ -8,12 +8,13 @@ module Openshift.V1.NamedClusterRoleBinding where
 
 import qualified Data.Aeson
 import GHC.Generics
+import Data.Text
 import Openshift.V1.ClusterRoleBinding
 
 
 -- | 
 data NamedClusterRoleBinding = NamedClusterRoleBinding
-    { name :: String -- ^ name of the cluster role binding 
+    { name :: Text -- ^ name of the cluster role binding 
     , roleBinding :: ClusterRoleBinding -- ^ the cluster role binding 
     } deriving (Show, Eq, Generic)
 

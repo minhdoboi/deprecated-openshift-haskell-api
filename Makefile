@@ -1,8 +1,8 @@
 gen:
 	./scripts/codegen.sh
 
-clean:
+gen-clean:
 	rm -rf lib
 	rm stack.yaml *.cabal Setup.hs
 
-.PHONY: clean gen
+.PHONY: gen-clean gen

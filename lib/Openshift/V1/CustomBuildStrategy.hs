@@ -8,6 +8,7 @@ module Openshift.V1.CustomBuildStrategy where
 
 import qualified Data.Aeson
 import GHC.Generics
+import Data.Text
 import Openshift.V1.EnvVar
 import Openshift.V1.LocalObjectReference
 import Openshift.V1.ObjectReference
@@ -22,7 +23,7 @@ data CustomBuildStrategy = CustomBuildStrategy
     , exposeDockerSocket :: Maybe Bool -- ^ allow running Docker commands (and build Docker images) from inside the container 
     , forcePull :: Maybe Bool -- ^ forces pulling of builder image from remote registry if true 
     , secrets :: Maybe [SecretSpec] -- ^ a list of secrets to include in the build pod in addition to pull, push and source secrets 
-    , buildAPIVersion :: Maybe String -- ^ requested API version for the Build object serialized and passed to the custom builder 
+    , buildAPIVersion :: Maybe Text -- ^ requested API version for the Build object serialized and passed to the custom builder 
     } deriving (Show, Eq, Generic)
 
 instance Data.Aeson.FromJSON CustomBuildStrategy

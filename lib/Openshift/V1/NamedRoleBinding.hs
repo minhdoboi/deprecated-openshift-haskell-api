@@ -8,12 +8,13 @@ module Openshift.V1.NamedRoleBinding where
 
 import qualified Data.Aeson
 import GHC.Generics
+import Data.Text
 import Openshift.V1.RoleBinding
 
 
 -- | 
 data NamedRoleBinding = NamedRoleBinding
-    { name :: String -- ^ name of the roleBinding 
+    { name :: Text -- ^ name of the roleBinding 
     , roleBinding :: RoleBinding -- ^ the roleBinding 
     } deriving (Show, Eq, Generic)
 

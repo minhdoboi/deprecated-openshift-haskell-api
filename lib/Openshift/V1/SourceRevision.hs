@@ -8,12 +8,13 @@ module Openshift.V1.SourceRevision where
 
 import qualified Data.Aeson
 import GHC.Generics
+import Data.Text
 import Openshift.V1.GitSourceRevision
 
 
 -- | 
 data SourceRevision = SourceRevision
-    { type_ :: String -- ^ type of the build source 
+    { type_ :: Text -- ^ type of the build source 
     , git :: Maybe GitSourceRevision -- ^ information about git-based build source 
     } deriving (Show, Eq, Generic)
 

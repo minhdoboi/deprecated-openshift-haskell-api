@@ -8,11 +8,12 @@ module Openshift.V1.ImageLayer where
 
 import qualified Data.Aeson
 import GHC.Generics
+import Data.Text
 
 
 -- | 
 data ImageLayer = ImageLayer
-    { name :: String -- ^ the name of the layer (blob, in Docker parlance) 
+    { name :: Text -- ^ the name of the layer (blob, in Docker parlance) 
     , size :: Integer -- ^ size of the layer in bytes 
     } deriving (Show, Eq, Generic)
 

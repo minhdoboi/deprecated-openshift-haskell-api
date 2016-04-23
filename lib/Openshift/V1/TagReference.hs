@@ -8,6 +8,7 @@ module Openshift.V1.TagReference where
 
 import qualified Data.Aeson
 import GHC.Generics
+import Data.Text
 import Openshift.Any
 import Openshift.V1.ObjectReference
 import Openshift.V1.TagImportPolicy
@@ -15,7 +16,7 @@ import Openshift.V1.TagImportPolicy
 
 -- | 
 data TagReference = TagReference
-    { name :: String -- ^ name of tag 
+    { name :: Text -- ^ name of tag 
     , annotations :: Maybe Any -- ^ annotations associated with images using this tag 
     , from :: Maybe ObjectReference -- ^ a reference to an image stream tag or image stream this tag should track 
     , reference :: Maybe Bool -- ^ if true consider this tag a reference only and do not attempt to import metadata about the image 

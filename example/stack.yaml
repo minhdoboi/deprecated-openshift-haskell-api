@@ -6,10 +6,12 @@ resolver: lts-5.13
 # Local packages, usually specified by relative directory name
 packages:
 - '.'
+- '..'
 
 # Packages to be pulled from upstream that are not in the resolver (e.g., acme-missiles-0.3)
-extra-deps:
-- openshift-v1-rest-0.1.0.0
+extra-deps: 
+- servant-0.7
+- servant-client-0.7
 
 # Override default flag values for local packages and extra-deps
 flags: {}

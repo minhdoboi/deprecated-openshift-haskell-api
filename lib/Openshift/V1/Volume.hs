@@ -8,6 +8,7 @@ module Openshift.V1.Volume where
 
 import qualified Data.Aeson
 import GHC.Generics
+import Data.Text
 import Openshift.V1.AWSElasticBlockStoreVolumeSource
 import Openshift.V1.CephFSVolumeSource
 import Openshift.V1.CinderVolumeSource
@@ -29,7 +30,7 @@ import Openshift.V1.SecretVolumeSource
 
 -- | Volume represents a named volume in a pod that may be accessed by any container in the pod.
 data Volume = Volume
-    { name :: String -- ^ Volume's name. Must be a DNS_LABEL and unique within the pod. More info: http://releases.k8s.io/HEAD/docs/user-guide/identifiers.md#names 
+    { name :: Text -- ^ Volume's name. Must be a DNS_LABEL and unique within the pod. More info: http://releases.k8s.io/HEAD/docs/user-guide/identifiers.md#names 
     , hostPath :: Maybe HostPathVolumeSource -- ^ HostPath represents a pre-existing file or directory on the host machine that is directly exposed to the container. This is generally used for system agents or other privileged things that are allowed to see the host machine. Most containers will NOT need this. More info: http://releases.k8s.io/HEAD/docs/user-guide/volumes.md#hostpath 
     , emptyDir :: Maybe EmptyDirVolumeSource -- ^ EmptyDir represents a temporary directory that shares a pod's lifetime. More info: http://releases.k8s.io/HEAD/docs/user-guide/volumes.md#emptydir 
     , gcePersistentDisk :: Maybe GCEPersistentDiskVolumeSource -- ^ GCEPersistentDisk represents a GCE Disk resource that is attached to a kubelet's host machine and then exposed to the pod. More info: http://releases.k8s.io/HEAD/docs/user-guide/volumes.md#gcepersistentdisk 

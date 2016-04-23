@@ -8,12 +8,13 @@ module Openshift.V1.ImageSourcePath where
 
 import qualified Data.Aeson
 import GHC.Generics
+import Data.Text
 
 
 -- | 
 data ImageSourcePath = ImageSourcePath
-    { sourcePath :: String -- ^ source path (directory or file) inside image 
-    , destinationDir :: String -- ^ relative destination directory in build home 
+    { sourcePath :: Text -- ^ source path (directory or file) inside image 
+    , destinationDir :: Text -- ^ relative destination directory in build home 
     } deriving (Show, Eq, Generic)
 
 instance Data.Aeson.FromJSON ImageSourcePath

@@ -8,11 +8,12 @@ module Openshift.V1.WebHookTrigger where
 
 import qualified Data.Aeson
 import GHC.Generics
+import Data.Text
 
 
 -- | 
 data WebHookTrigger = WebHookTrigger
-    { secret :: Maybe String -- ^ secret used to validate requests 
+    { secret :: Maybe Text -- ^ secret used to validate requests 
     } deriving (Show, Eq, Generic)
 
 instance Data.Aeson.FromJSON WebHookTrigger

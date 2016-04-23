@@ -8,6 +8,7 @@ module Openshift.V1.BuildConfigSpec where
 
 import qualified Data.Aeson
 import GHC.Generics
+import Data.Text
 import Openshift.V1.BuildOutput
 import Openshift.V1.BuildSource
 import Openshift.V1.BuildStrategy
@@ -19,7 +20,7 @@ import Openshift.V1.SourceRevision
 -- | 
 data BuildConfigSpec = BuildConfigSpec
     { triggers :: [BuildTriggerPolicy] -- ^ determines how new builds can be launched from a build config.  if no triggers are defined, a new build can only occur as a result of an explicit client build creation. 
-    , serviceAccount :: Maybe String -- ^ the name of the service account to use to run pods created by the build, pod will be allowed to use secrets referenced by the service account 
+    , serviceAccount :: Maybe Text -- ^ the name of the service account to use to run pods created by the build, pod will be allowed to use secrets referenced by the service account 
     , source :: Maybe BuildSource -- ^ describes the source control management system in use 
     , revision :: Maybe SourceRevision -- ^ specific revision in the source repository 
     , strategy :: BuildStrategy -- ^ defines how to perform a build 

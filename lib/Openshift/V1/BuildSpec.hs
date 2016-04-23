@@ -8,6 +8,7 @@ module Openshift.V1.BuildSpec where
 
 import qualified Data.Aeson
 import GHC.Generics
+import Data.Text
 import Openshift.V1.BuildOutput
 import Openshift.V1.BuildSource
 import Openshift.V1.BuildStrategy
@@ -17,7 +18,7 @@ import Openshift.V1.SourceRevision
 
 -- | 
 data BuildSpec = BuildSpec
-    { serviceAccount :: Maybe String -- ^ the name of the service account to use to run pods created by the build, pod will be allowed to use secrets referenced by the service account 
+    { serviceAccount :: Maybe Text -- ^ the name of the service account to use to run pods created by the build, pod will be allowed to use secrets referenced by the service account 
     , source :: Maybe BuildSource -- ^ describes the source control management system in use 
     , revision :: Maybe SourceRevision -- ^ specific revision in the source repository 
     , strategy :: BuildStrategy -- ^ defines how to perform a build 

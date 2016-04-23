@@ -8,13 +8,14 @@ module Openshift.V1.TagEvent where
 
 import qualified Data.Aeson
 import GHC.Generics
+import Data.Text
 
 
 -- | 
 data TagEvent = TagEvent
-    { created :: String -- ^ when the event was created 
-    , dockerImageReference :: String -- ^ the string that can be used to pull this image 
-    , image :: String -- ^ the image 
+    { created :: Text -- ^ when the event was created 
+    , dockerImageReference :: Text -- ^ the string that can be used to pull this image 
+    , image :: Text -- ^ the image 
     , generation :: Integer -- ^ the generation of the image stream spec tag this tag event represents 
     } deriving (Show, Eq, Generic)
 
