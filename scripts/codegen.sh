@@ -11,6 +11,10 @@ java -jar $PROJECTDIR/../../swagger-codegen/modules/swagger-codegen-cli/target/s
   -o $PROJECTDIR \
   -c $BASEDIR/codegen.config | tee build.log
 
-sed -i '.bak' 's/, Openshift.OapivApi/, Openshift.OapivApi, Openshift.Any/' $PROJECTDIR/openshift-v1-rest.cabal
+CABAL_FILE=$PROJECTDIR/openshift-v1-rest.cabal
+
+sed -i '.bak' 's/, Openshift.OapivApi/, Openshift.OapivApi, Openshift.ClientUtils, Openshift.Any/' $CABAL_FILE
+
+sed -i '.bak' 's/, servant-client/, servant-client, http-client-tls, connection/' $CABAL_FILE
 
 cp $BASEDIR/*.hs $PROJECTDIR/lib/Openshift/
