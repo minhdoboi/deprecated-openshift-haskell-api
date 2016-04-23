@@ -9,8 +9,8 @@ module Openshift.V1.PolicyBinding where
 import qualified Data.Aeson
 import GHC.Generics
 import Data.Text
+import Kubernetes.V1.ObjectMeta
 import Openshift.V1.NamedRoleBinding
-import Openshift.V1.ObjectMeta
 import Openshift.V1.ObjectReference
 
 

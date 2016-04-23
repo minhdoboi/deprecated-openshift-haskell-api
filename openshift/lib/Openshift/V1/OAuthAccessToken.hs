@@ -9,7 +9,7 @@ module Openshift.V1.OAuthAccessToken where
 import qualified Data.Aeson
 import GHC.Generics
 import Data.Text
-import Openshift.V1.ObjectMeta
+import Kubernetes.V1.ObjectMeta
 
 
 -- | 

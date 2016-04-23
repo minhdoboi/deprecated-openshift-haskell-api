@@ -9,8 +9,8 @@ module Openshift.V1.Secret where
 import qualified Data.Aeson
 import GHC.Generics
 import Data.Text
+import Kubernetes.V1.ObjectMeta
 import Openshift.Any
-import Openshift.V1.ObjectMeta
 
 
 -- | Secret holds secret data of a certain type. The total bytes of the values in the Data field must be less than MaxSecretSize bytes.

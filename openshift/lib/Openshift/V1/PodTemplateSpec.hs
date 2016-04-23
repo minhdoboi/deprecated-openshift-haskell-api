@@ -8,7 +8,7 @@ module Openshift.V1.PodTemplateSpec where
 
 import qualified Data.Aeson
 import GHC.Generics
-import Openshift.V1.ObjectMeta
+import Kubernetes.V1.ObjectMeta
 import Openshift.V1.PodSpec
 
 

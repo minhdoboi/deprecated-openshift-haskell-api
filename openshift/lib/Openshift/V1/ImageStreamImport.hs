@@ -9,9 +9,9 @@ module Openshift.V1.ImageStreamImport where
 import qualified Data.Aeson
 import GHC.Generics
 import Data.Text
+import Kubernetes.V1.ObjectMeta
 import Openshift.V1.ImageStreamImportSpec
 import Openshift.V1.ImageStreamImportStatus
-import Openshift.V1.ObjectMeta
 
 
 -- | 

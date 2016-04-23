@@ -9,9 +9,9 @@ module Openshift.V1.BuildConfig where
 import qualified Data.Aeson
 import GHC.Generics
 import Data.Text
+import Kubernetes.V1.ObjectMeta
 import Openshift.V1.BuildConfigSpec
 import Openshift.V1.BuildConfigStatus
-import Openshift.V1.ObjectMeta
 
 
 -- | 

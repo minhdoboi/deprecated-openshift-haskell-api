@@ -9,8 +9,8 @@ module Openshift.V1.ImageStreamTag where
 import qualified Data.Aeson
 import GHC.Generics
 import Data.Text
+import Kubernetes.V1.ObjectMeta
 import Openshift.V1.Image
-import Openshift.V1.ObjectMeta
 
 
 -- | 

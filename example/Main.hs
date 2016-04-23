@@ -8,7 +8,7 @@ import ClassyPrelude
 import Openshift.OapivApi
 import qualified Openshift.V1.ProjectList as ProjectList
 import qualified Openshift.V1.Project as Project
-import Openshift.V1.ObjectMeta (name)
+import Kubernetes.V1.ObjectMeta (name)
 import Openshift.ClientUtils
 import Control.Monad
 import Control.Monad.Trans.Except (ExceptT, runExceptT)

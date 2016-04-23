@@ -3,7 +3,7 @@ module Openshift.ClientUtils (
   getEnvOpenshiftClientContext,
   withOpenshiftCtx) where
 
-import Network.HTTP.Client (Manager, newManager, defaultManagerSettings)
+import Network.HTTP.Client (Manager, newManager)
 import Network.HTTP.Client.TLS
 import Network.Connection
 import System.Environment
@@ -27,7 +27,7 @@ getEnvOpenshiftClientContext = do
   tokenBearer <- toBearer <$> getEnv "OPENSHIFT_TOKEN"
   host        <- getEnv "OPENSHIFT_HOST"
   port        <- toPort <$> lookupEnv "OPENSHIFT_PORT"
-  manager     <- newManager $ defaultManagerSettings
+  manager     <- newManager $ tlsManagerSettings
   return $ OpenshiftClientContext (pack tokenBearer) manager (BaseUrl Https host port "")
   where
     toBearer token = "Bearer " ++ token
