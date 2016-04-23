@@ -1,0 +1,1 @@
+module Kubernetes.Integer ( ) where

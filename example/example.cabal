@@ -21,6 +21,7 @@ executable example-openshift-client
                      , servant-client
                      , text
                      , openshift-v1-rest
+                     , kubernetes-v1-rest
   default-language:    Haskell2010
   default-extensions: NoImplicitPrelude,
                       OverloadedStrings

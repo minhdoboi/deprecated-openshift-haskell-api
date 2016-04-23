@@ -1,0 +1,24 @@
+{-# LANGUAGE DataKinds #-}
+{-# LANGUAGE DeriveGeneric #-}
+{-# LANGUAGE TypeOperators #-}
+{-# LANGUAGE OverloadedStrings #-}
+{-# LANGUAGE GeneralizedNewtypeDeriving #-}
+
+module Kubernetes.V1.Handler where
+
+import qualified Data.Aeson
+import GHC.Generics
+import Kubernetes.V1.ExecAction
+import Kubernetes.V1.HTTPGetAction
+import Kubernetes.V1.TCPSocketAction
+
+
+-- | Handler defines a specific action that should be taken
+data Handler = Handler
+    { exec :: Maybe ExecAction -- ^ One and only one of the following should be specified. Exec specifies the action to take. 
+    , httpGet :: Maybe HTTPGetAction -- ^ HTTPGet specifies the http request to perform. 
+    , tcpSocket :: Maybe TCPSocketAction -- ^ TCPSocket specifies an action involving a TCP port. TCP hooks not yet supported 
+    } deriving (Show, Eq, Generic)
+
+instance Data.Aeson.FromJSON Handler
+instance Data.Aeson.ToJSON Handler
