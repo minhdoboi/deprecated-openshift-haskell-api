@@ -11,7 +11,6 @@ import GHC.Generics
 import Data.Text
 import Kubernetes.V1.EnvVarSource
 
-
 -- | EnvVar represents an environment variable present in a Container.
 data EnvVar = EnvVar
     { name :: Text -- ^ Name of the environment variable. Must be a C_IDENTIFIER. 

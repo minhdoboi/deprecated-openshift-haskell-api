@@ -13,7 +13,6 @@ import Kubernetes.V1.ObjectMeta
 import Kubernetes.V1.ServiceSpec
 import Kubernetes.V1.ServiceStatus
 
-
 -- | Service is a named abstraction of software service (for example, mysql) consisting of local port (for example 3306) that the proxy listens on, and the selector that determines which pods will answer requests sent through the proxy.
 data Service = Service
     { kind :: Maybe Text -- ^ Kind is a string value representing the REST resource this object represents. Servers may infer this from the endpoint the client submits requests to. Cannot be updated. In CamelCase. More info: http://releases.k8s.io/HEAD/docs/devel/api-conventions.md#types-kinds 

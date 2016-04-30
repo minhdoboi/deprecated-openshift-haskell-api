@@ -3,13 +3,14 @@
 {-# LANGUAGE TypeOperators #-}
 {-# LANGUAGE OverloadedStrings #-}
 {-# LANGUAGE GeneralizedNewtypeDeriving #-}
+{-# LANGUAGE TemplateHaskell #-}
 
 module Kubernetes.V1.ComponentCondition where
 
 import qualified Data.Aeson
 import GHC.Generics
 import Data.Text
-
+import Data.Aeson.TH (deriveJSON, defaultOptions, fieldLabelModifier)
 
 -- | Information about the condition of a component.
 data ComponentCondition = ComponentCondition
@@ -19,5 +20,4 @@ data ComponentCondition = ComponentCondition
     , error :: Maybe Text -- ^ Condition error code for a component. For example, a health check error code. 
     } deriving (Show, Eq, Generic)
 
-instance Data.Aeson.FromJSON ComponentCondition
-instance Data.Aeson.ToJSON ComponentCondition
+$(deriveJSON defaultOptions{fieldLabelModifier = (\n -> if Prelude.last n == '_' then Prelude.take ((Prelude.length n) - 1 ) n else n)} ''ComponentCondition)

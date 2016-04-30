@@ -12,7 +12,6 @@ import Kubernetes.V1.ExecAction
 import Kubernetes.V1.HTTPGetAction
 import Kubernetes.V1.TCPSocketAction
 
-
 -- | Handler defines a specific action that should be taken
 data Handler = Handler
     { exec :: Maybe ExecAction -- ^ One and only one of the following should be specified. Exec specifies the action to take. 

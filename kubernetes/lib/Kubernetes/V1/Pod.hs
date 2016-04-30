@@ -13,7 +13,6 @@ import Kubernetes.V1.ObjectMeta
 import Kubernetes.V1.PodSpec
 import Kubernetes.V1.PodStatus
 
-
 -- | Pod is a collection of containers that can run on a host. This resource is created by clients and scheduled onto hosts.
 data Pod = Pod
     { kind :: Maybe Text -- ^ Kind is a string value representing the REST resource this object represents. Servers may infer this from the endpoint the client submits requests to. Cannot be updated. In CamelCase. More info: http://releases.k8s.io/HEAD/docs/devel/api-conventions.md#types-kinds 

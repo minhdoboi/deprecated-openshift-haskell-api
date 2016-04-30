@@ -10,7 +10,6 @@ import qualified Data.Aeson
 import GHC.Generics
 import Kubernetes.V1.Capability
 
-
 -- | Adds and removes POSIX capabilities from running containers.
 data Capabilities = Capabilities
     { add :: Maybe [Capability] -- ^ Added capabilities 

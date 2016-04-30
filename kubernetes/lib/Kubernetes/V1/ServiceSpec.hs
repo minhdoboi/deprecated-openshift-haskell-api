@@ -3,6 +3,7 @@
 {-# LANGUAGE TypeOperators #-}
 {-# LANGUAGE OverloadedStrings #-}
 {-# LANGUAGE GeneralizedNewtypeDeriving #-}
+{-# LANGUAGE TemplateHaskell #-}
 
 module Kubernetes.V1.ServiceSpec where
 
@@ -11,7 +12,7 @@ import GHC.Generics
 import Data.Text
 import Kubernetes.Any
 import Kubernetes.V1.ServicePort
-
+import Data.Aeson.TH (deriveJSON, defaultOptions, fieldLabelModifier)
 
 -- | ServiceSpec describes the attributes that a user creates on a service.
 data ServiceSpec = ServiceSpec
@@ -26,5 +27,4 @@ data ServiceSpec = ServiceSpec
     , loadBalancerIP :: Maybe Text -- ^ Only applies to Service Type: LoadBalancer LoadBalancer will get created with the IP specified in this field. This feature depends on whether the underlying cloud-provider supports specifying the loadBalancerIP when a load balancer is created. This field will be ignored if the cloud-provider does not support the feature. 
     } deriving (Show, Eq, Generic)
 
-instance Data.Aeson.FromJSON ServiceSpec
-instance Data.Aeson.ToJSON ServiceSpec
+$(deriveJSON defaultOptions{fieldLabelModifier = (\n -> if Prelude.last n == '_' then Prelude.take ((Prelude.length n) - 1 ) n else n)} ''ServiceSpec)

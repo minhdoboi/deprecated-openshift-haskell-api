@@ -12,7 +12,6 @@ import Data.Text
 import Kubernetes.V1.PersistentVolumeAccessMode
 import Kubernetes.V1.ResourceRequirements
 
-
 -- | PersistentVolumeClaimSpec describes the common attributes of storage devices and allows a Source for provider-specific attributes
 data PersistentVolumeClaimSpec = PersistentVolumeClaimSpec
     { accessModes :: Maybe [PersistentVolumeAccessMode] -- ^ AccessModes contains the desired access modes the volume should have. More info: http://releases.k8s.io/HEAD/docs/user-guide/persistent-volumes.md#access-modes-1 

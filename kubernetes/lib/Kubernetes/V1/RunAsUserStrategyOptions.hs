@@ -3,13 +3,14 @@
 {-# LANGUAGE TypeOperators #-}
 {-# LANGUAGE OverloadedStrings #-}
 {-# LANGUAGE GeneralizedNewtypeDeriving #-}
+{-# LANGUAGE TemplateHaskell #-}
 
 module Kubernetes.V1.RunAsUserStrategyOptions where
 
 import qualified Data.Aeson
 import GHC.Generics
 import Data.Text
-
+import Data.Aeson.TH (deriveJSON, defaultOptions, fieldLabelModifier)
 
 -- | 
 data RunAsUserStrategyOptions = RunAsUserStrategyOptions
@@ -19,5 +20,4 @@ data RunAsUserStrategyOptions = RunAsUserStrategyOptions
     , uidRangeMax :: Maybe Integer -- ^ max value for range based allocators 
     } deriving (Show, Eq, Generic)
 
-instance Data.Aeson.FromJSON RunAsUserStrategyOptions
-instance Data.Aeson.ToJSON RunAsUserStrategyOptions
+$(deriveJSON defaultOptions{fieldLabelModifier = (\n -> if Prelude.last n == '_' then Prelude.take ((Prelude.length n) - 1 ) n else n)} ''RunAsUserStrategyOptions)

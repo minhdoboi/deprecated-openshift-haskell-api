@@ -3,6 +3,7 @@
 {-# LANGUAGE TypeOperators #-}
 {-# LANGUAGE OverloadedStrings #-}
 {-# LANGUAGE GeneralizedNewtypeDeriving #-}
+{-# LANGUAGE TemplateHaskell #-}
 
 module Kubernetes.V1.FSGroupStrategyOptions where
 
@@ -10,7 +11,7 @@ import qualified Data.Aeson
 import GHC.Generics
 import Data.Text
 import Kubernetes.V1.IDRange
-
+import Data.Aeson.TH (deriveJSON, defaultOptions, fieldLabelModifier)
 
 -- | 
 data FSGroupStrategyOptions = FSGroupStrategyOptions
@@ -18,5 +19,4 @@ data FSGroupStrategyOptions = FSGroupStrategyOptions
     , ranges :: Maybe [IDRange] -- ^ ranges of allowable IDs for fsGroup 
     } deriving (Show, Eq, Generic)
 
-instance Data.Aeson.FromJSON FSGroupStrategyOptions
-instance Data.Aeson.ToJSON FSGroupStrategyOptions
+$(deriveJSON defaultOptions{fieldLabelModifier = (\n -> if Prelude.last n == '_' then Prelude.take ((Prelude.length n) - 1 ) n else n)} ''FSGroupStrategyOptions)

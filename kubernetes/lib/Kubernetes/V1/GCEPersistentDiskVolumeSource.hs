@@ -10,7 +10,6 @@ import qualified Data.Aeson
 import GHC.Generics
 import Data.Text
 
-
 -- | GCEPersistentDiskVolumeSource represents a Persistent Disk resource in Google Compute Engine.\n\nA GCE PD must exist and be formatted before mounting to a container. The disk must also be in the same GCE project and zone as the kubelet. A GCE PD can only be mounted as read/write once.
 data GCEPersistentDiskVolumeSource = GCEPersistentDiskVolumeSource
     { pdName :: Text -- ^ Unique name of the PD resource in GCE. Used to identify the disk in GCE. More info: http://releases.k8s.io/HEAD/docs/user-guide/volumes.md#gcepersistentdisk 

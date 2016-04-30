@@ -10,7 +10,6 @@ import qualified Data.Aeson
 import GHC.Generics
 import Data.Text
 
-
 -- | 
 data Parameter = Parameter
     { name :: Text -- ^ name of the parameter 

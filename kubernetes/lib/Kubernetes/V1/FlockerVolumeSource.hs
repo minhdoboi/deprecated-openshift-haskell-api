@@ -10,7 +10,6 @@ import qualified Data.Aeson
 import GHC.Generics
 import Data.Text
 
-
 -- | FlockerVolumeSource represents a Flocker volume mounted by the Flocker agent.
 data FlockerVolumeSource = FlockerVolumeSource
     { datasetName :: Text -- ^ Required: the volume name. This is going to be store on metadata -> name on the payload for Flocker 

@@ -3,6 +3,7 @@
 {-# LANGUAGE TypeOperators #-}
 {-# LANGUAGE OverloadedStrings #-}
 {-# LANGUAGE GeneralizedNewtypeDeriving #-}
+{-# LANGUAGE TemplateHaskell #-}
 
 module Kubernetes.V1.Secret where
 
@@ -11,7 +12,7 @@ import GHC.Generics
 import Data.Text
 import Kubernetes.Any
 import Kubernetes.V1.ObjectMeta
-
+import Data.Aeson.TH (deriveJSON, defaultOptions, fieldLabelModifier)
 
 -- | Secret holds secret data of a certain type. The total bytes of the values in the Data field must be less than MaxSecretSize bytes.
 data Secret = Secret
@@ -22,5 +23,4 @@ data Secret = Secret
     , type_ :: Maybe Text -- ^ Used to facilitate programmatic handling of secret data. 
     } deriving (Show, Eq, Generic)
 
-instance Data.Aeson.FromJSON Secret
-instance Data.Aeson.ToJSON Secret
+$(deriveJSON defaultOptions{fieldLabelModifier = (\n -> if Prelude.last n == '_' then Prelude.take ((Prelude.length n) - 1 ) n else n)} ''Secret)

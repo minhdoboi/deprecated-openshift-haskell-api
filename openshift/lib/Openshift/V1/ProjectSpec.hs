@@ -9,7 +9,6 @@ module Openshift.V1.ProjectSpec where
 import qualified Data.Aeson
 import GHC.Generics
 
-
 -- | 
 data ProjectSpec = ProjectSpec
     { finalizers :: Maybe [String] -- ^ an opaque list of values that must be empty to permanently remove object from storage 

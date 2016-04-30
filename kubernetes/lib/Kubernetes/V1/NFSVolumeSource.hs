@@ -10,7 +10,6 @@ import qualified Data.Aeson
 import GHC.Generics
 import Data.Text
 
-
 -- | NFSVolumeSource represents an NFS mount that lasts the lifetime of a pod
 data NFSVolumeSource = NFSVolumeSource
     { server :: Text -- ^ Server is the hostname or IP address of the NFS server. More info: http://releases.k8s.io/HEAD/docs/user-guide/volumes.md#nfs 

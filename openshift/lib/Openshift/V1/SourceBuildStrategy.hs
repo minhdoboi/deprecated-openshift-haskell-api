@@ -13,7 +13,6 @@ import Openshift.V1.EnvVar
 import Openshift.V1.LocalObjectReference
 import Openshift.V1.ObjectReference
 
-
 -- | 
 data SourceBuildStrategy = SourceBuildStrategy
     { from :: ObjectReference -- ^ reference to an image stream, image stream tag, or image stream image from which the Docker image should be pulled 

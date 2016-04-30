@@ -10,7 +10,6 @@ import qualified Data.Aeson
 import GHC.Generics
 import Data.Text
 
-
 -- | 
 data PolicyRule = PolicyRule
     { verbs :: [Text] -- ^ list of verbs that apply to ALL the resourceKinds and attributeRestrictions contained in this rule.  The verb * represents all kinds. 

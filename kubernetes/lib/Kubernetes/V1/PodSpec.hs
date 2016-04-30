@@ -15,7 +15,6 @@ import Kubernetes.V1.LocalObjectReference
 import Kubernetes.V1.PodSecurityContext
 import Kubernetes.V1.Volume
 
-
 -- | PodSpec is a description of a pod.
 data PodSpec = PodSpec
     { volumes :: Maybe [Volume] -- ^ List of volumes that can be mounted by containers belonging to the pod. More info: http://releases.k8s.io/HEAD/docs/user-guide/volumes.md 

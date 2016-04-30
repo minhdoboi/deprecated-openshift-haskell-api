@@ -11,7 +11,6 @@ import GHC.Generics
 import Data.Text
 import Openshift.V1.Role
 
-
 -- | 
 data NamedRole = NamedRole
     { name :: Text -- ^ name of the role 

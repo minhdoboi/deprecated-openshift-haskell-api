@@ -12,7 +12,6 @@ import Data.Text
 import Kubernetes.V1.ObjectMeta
 import Openshift.V1.NamedRole
 
-
 -- | 
 data Policy = Policy
     { kind :: Maybe Text -- ^ Kind is a string value representing the REST resource this object represents. Servers may infer this from the endpoint the client submits requests to. Cannot be updated. In CamelCase. More info: http://releases.k8s.io/HEAD/docs/devel/api-conventions.md#types-kinds 

@@ -11,7 +11,6 @@ import GHC.Generics
 import Data.Text
 import Openshift.V1.LifecycleHook
 
-
 -- | 
 data RollingDeploymentStrategyParams = RollingDeploymentStrategyParams
     { updatePeriodSeconds :: Maybe Integer -- ^ the time to wait between individual pod updates 

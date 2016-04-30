@@ -11,7 +11,6 @@ import GHC.Generics
 import Data.Text
 import Openshift.V1.DeploymentCause
 
-
 -- | 
 data DeploymentDetails = DeploymentDetails
     { message :: Maybe Text -- ^ a user specified change message 

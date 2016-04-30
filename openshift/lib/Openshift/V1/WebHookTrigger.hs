@@ -10,7 +10,6 @@ import qualified Data.Aeson
 import GHC.Generics
 import Data.Text
 
-
 -- | 
 data WebHookTrigger = WebHookTrigger
     { secret :: Maybe Text -- ^ secret used to validate requests 

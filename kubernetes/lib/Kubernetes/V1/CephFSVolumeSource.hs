@@ -11,7 +11,6 @@ import GHC.Generics
 import Data.Text
 import Kubernetes.V1.LocalObjectReference
 
-
 -- | CephFSVolumeSource represents a Ceph Filesystem Mount that lasts the lifetime of a pod
 data CephFSVolumeSource = CephFSVolumeSource
     { monitors :: [Text] -- ^ Required: Monitors is a collection of Ceph monitors More info: http://releases.k8s.io/HEAD/examples/cephfs/README.md#how-to-use-it 

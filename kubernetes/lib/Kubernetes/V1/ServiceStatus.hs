@@ -10,7 +10,6 @@ import qualified Data.Aeson
 import GHC.Generics
 import Kubernetes.V1.LoadBalancerStatus
 
-
 -- | ServiceStatus represents the current status of a service.
 data ServiceStatus = ServiceStatus
     { loadBalancer :: Maybe LoadBalancerStatus -- ^ LoadBalancer contains the current status of the load-balancer, if one is present. 

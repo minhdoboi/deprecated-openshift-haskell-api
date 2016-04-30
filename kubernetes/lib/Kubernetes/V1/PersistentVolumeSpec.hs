@@ -24,7 +24,6 @@ import Kubernetes.V1.ObjectReference
 import Kubernetes.V1.PersistentVolumeAccessMode
 import Kubernetes.V1.RBDVolumeSource
 
-
 -- | PersistentVolumeSpec is the specification of a persistent volume.
 data PersistentVolumeSpec = PersistentVolumeSpec
     { capacity :: Maybe Any -- ^ A description of the persistent volume's resources and capacity. More info: http://releases.k8s.io/HEAD/docs/user-guide/persistent-volumes.md#capacity 

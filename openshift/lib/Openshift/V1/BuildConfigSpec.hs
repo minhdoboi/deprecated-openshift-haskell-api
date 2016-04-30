@@ -16,7 +16,6 @@ import Openshift.V1.BuildTriggerPolicy
 import Openshift.V1.ResourceRequirements
 import Openshift.V1.SourceRevision
 
-
 -- | 
 data BuildConfigSpec = BuildConfigSpec
     { triggers :: [BuildTriggerPolicy] -- ^ determines how new builds can be launched from a build config.  if no triggers are defined, a new build can only occur as a result of an explicit client build creation. 

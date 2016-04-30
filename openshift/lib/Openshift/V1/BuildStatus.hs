@@ -11,7 +11,6 @@ import GHC.Generics
 import Data.Text
 import Openshift.V1.ObjectReference
 
-
 -- | 
 data BuildStatus = BuildStatus
     { phase :: Text -- ^ observed point in the build lifecycle 

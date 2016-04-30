@@ -10,7 +10,6 @@ import qualified Data.Aeson
 import GHC.Generics
 import Data.Text
 
-
 -- | 
 data ImageLayer = ImageLayer
     { name :: Text -- ^ the name of the layer (blob, in Docker parlance) 

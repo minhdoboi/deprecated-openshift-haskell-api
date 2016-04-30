@@ -10,7 +10,6 @@ import qualified Data.Aeson
 import GHC.Generics
 import Kubernetes.V1.Handler
 
-
 -- | Lifecycle describes actions that the management system should take in response to container lifecycle events. For the PostStart and PreStop lifecycle handlers, management of the container blocks until the action is complete, unless the container process fails, in which case the handler is aborted.
 data Lifecycle = Lifecycle
     { postStart :: Maybe Handler -- ^ PostStart is called immediately after a container is created. If the handler fails, the container is terminated and restarted according to its restart policy. Other management of the container blocks until the hook completes. More info: http://releases.k8s.io/HEAD/docs/user-guide/container-environment.md#hook-details 

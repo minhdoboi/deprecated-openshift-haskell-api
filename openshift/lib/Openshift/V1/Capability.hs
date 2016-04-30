@@ -9,7 +9,6 @@ module Openshift.V1.Capability where
 import qualified Data.Aeson
 import GHC.Generics
 
-
 -- | 
 data Capability = Capability
     { 

@@ -11,7 +11,6 @@ import GHC.Generics
 import Data.Text
 import Kubernetes.V1.ObjectReference
 
-
 -- | EndpointAddress is a tuple that describes single IP address.
 data EndpointAddress = EndpointAddress
     { ip :: Text -- ^ The IP of this endpoint. May not be loopback (127.0.0.0/8), link-local (169.254.0.0/16), or link-local multicast ((224.0.0.0/24). 

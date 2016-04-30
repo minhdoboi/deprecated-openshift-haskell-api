@@ -11,7 +11,6 @@ import GHC.Generics
 import Data.Text
 import Openshift.V1.ClusterRole
 
-
 -- | 
 data NamedClusterRole = NamedClusterRole
     { name :: Text -- ^ name of the cluster role 

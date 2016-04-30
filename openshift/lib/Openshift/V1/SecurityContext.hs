@@ -11,7 +11,6 @@ import GHC.Generics
 import Openshift.V1.Capabilities
 import Openshift.V1.SELinuxOptions
 
-
 -- | SecurityContext holds security configuration that will be applied to a container. Some fields are present in both SecurityContext and PodSecurityContext.  When both are set, the values in SecurityContext take precedence.
 data SecurityContext = SecurityContext
     { capabilities :: Maybe Capabilities -- ^ The capabilities to add/drop when running containers. Defaults to the default set of capabilities granted by the container runtime. 

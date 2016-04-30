@@ -10,7 +10,6 @@ import qualified Data.Aeson
 import GHC.Generics
 import Data.Text
 
-
 -- | 
 data BinaryBuildSource = BinaryBuildSource
     { asFile :: Maybe Text -- ^ indicate the provided binary should be considered a single file placed within the root of the input; must be a valid filename with no path segments 

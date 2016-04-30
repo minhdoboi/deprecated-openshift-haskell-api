@@ -12,7 +12,6 @@ import Data.Text
 import Kubernetes.V1.ContainerStatus
 import Kubernetes.V1.PodCondition
 
-
 -- | PodStatus represents information about the status of a pod. Status may trail the actual state of a system.
 data PodStatus = PodStatus
     { phase :: Maybe Text -- ^ Current condition of the pod. More info: http://releases.k8s.io/HEAD/docs/user-guide/pod-states.md#pod-phase 

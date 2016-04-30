@@ -12,7 +12,6 @@ import Openshift.V1.ImageSourcePath
 import Openshift.V1.LocalObjectReference
 import Openshift.V1.ObjectReference
 
-
 -- | 
 data ImageSource = ImageSource
     { from :: ObjectReference -- ^ reference to ImageStreamTag, ImageStreamImage, or DockerImage 

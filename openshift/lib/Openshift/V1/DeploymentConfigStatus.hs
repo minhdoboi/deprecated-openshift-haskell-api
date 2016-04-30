@@ -10,7 +10,6 @@ import qualified Data.Aeson
 import GHC.Generics
 import Openshift.V1.DeploymentDetails
 
-
 -- | 
 data DeploymentConfigStatus = DeploymentConfigStatus
     { latestVersion :: Maybe Integer -- ^ used to determine whether the current deployment is out of sync 

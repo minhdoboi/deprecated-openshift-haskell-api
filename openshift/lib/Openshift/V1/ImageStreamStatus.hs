@@ -11,7 +11,6 @@ import GHC.Generics
 import Data.Text
 import Openshift.V1.NamedTagEventList
 
-
 -- | 
 data ImageStreamStatus = ImageStreamStatus
     { dockerImageRepository :: Text -- ^ represents the effective location this stream may be accessed at, may be empty until the server determines where the repository is located 

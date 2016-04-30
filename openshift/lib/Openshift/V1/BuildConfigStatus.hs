@@ -9,7 +9,6 @@ module Openshift.V1.BuildConfigStatus where
 import qualified Data.Aeson
 import GHC.Generics
 
-
 -- | 
 data BuildConfigStatus = BuildConfigStatus
     { lastVersion :: Integer -- ^ used to inform about number of last triggered build 

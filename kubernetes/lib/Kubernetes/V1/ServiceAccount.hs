@@ -13,7 +13,6 @@ import Kubernetes.V1.LocalObjectReference
 import Kubernetes.V1.ObjectMeta
 import Kubernetes.V1.ObjectReference
 
-
 -- | ServiceAccount binds together: * a name, understood by users, and perhaps by peripheral systems, for an identity * a principal that can be authenticated and authorized * a set of secrets
 data ServiceAccount = ServiceAccount
     { kind :: Maybe Text -- ^ Kind is a string value representing the REST resource this object represents. Servers may infer this from the endpoint the client submits requests to. Cannot be updated. In CamelCase. More info: http://releases.k8s.io/HEAD/docs/devel/api-conventions.md#types-kinds 

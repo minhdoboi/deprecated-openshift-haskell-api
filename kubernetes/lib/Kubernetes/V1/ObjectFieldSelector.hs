@@ -10,7 +10,6 @@ import qualified Data.Aeson
 import GHC.Generics
 import Data.Text
 
-
 -- | ObjectFieldSelector selects an APIVersioned field of an object.
 data ObjectFieldSelector = ObjectFieldSelector
     { apiVersion :: Maybe Text -- ^ Version of the schema the FieldPath is written in terms of, defaults to \"v1\". 

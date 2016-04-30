@@ -13,7 +13,6 @@ import Openshift.Any
 import Openshift.V1.ObjectReference
 import Openshift.V1.TagImportPolicy
 
-
 -- | 
 data TagReference = TagReference
     { name :: Text -- ^ name of tag 

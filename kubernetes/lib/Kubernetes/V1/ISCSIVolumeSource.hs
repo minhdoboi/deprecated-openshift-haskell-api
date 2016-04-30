@@ -10,7 +10,6 @@ import qualified Data.Aeson
 import GHC.Generics
 import Data.Text
 
-
 -- | ISCSIVolumeSource describes an ISCSI Disk can only be mounted as read/write once.
 data ISCSIVolumeSource = ISCSIVolumeSource
     { targetPortal :: Text -- ^ iSCSI target portal. The portal is either an IP or ip_addr:port if the port is other than default (typically TCP ports 860 and 3260). 

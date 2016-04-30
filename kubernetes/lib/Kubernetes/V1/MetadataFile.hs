@@ -11,7 +11,6 @@ import GHC.Generics
 import Data.Text
 import Kubernetes.V1.ObjectFieldSelector
 
-
 -- | 
 data MetadataFile = MetadataFile
     { name :: Text -- ^ the name of the file to be created 

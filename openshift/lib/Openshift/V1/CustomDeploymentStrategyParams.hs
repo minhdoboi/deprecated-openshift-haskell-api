@@ -11,7 +11,6 @@ import GHC.Generics
 import Data.Text
 import Openshift.V1.EnvVar
 
-
 -- | 
 data CustomDeploymentStrategyParams = CustomDeploymentStrategyParams
     { image :: Maybe Text -- ^ a Docker image which can carry out a deployment 

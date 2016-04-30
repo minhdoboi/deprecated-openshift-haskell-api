@@ -3,6 +3,7 @@
 {-# LANGUAGE TypeOperators #-}
 {-# LANGUAGE OverloadedStrings #-}
 {-# LANGUAGE GeneralizedNewtypeDeriving #-}
+{-# LANGUAGE TemplateHaskell #-}
 
 module Kubernetes.V1.LimitRangeItem where
 
@@ -10,7 +11,7 @@ import qualified Data.Aeson
 import GHC.Generics
 import Data.Text
 import Kubernetes.Any
-
+import Data.Aeson.TH (deriveJSON, defaultOptions, fieldLabelModifier)
 
 -- | LimitRangeItem defines a min/max usage limit for any resource that matches on kind.
 data LimitRangeItem = LimitRangeItem
@@ -22,5 +23,4 @@ data LimitRangeItem = LimitRangeItem
     , maxLimitRequestRatio :: Maybe Any -- ^ MaxLimitRequestRatio if specified, the named resource must have a request and limit that are both non-zero where limit divided by request is less than or equal to the enumerated value; this represents the max burst for the named resource. 
     } deriving (Show, Eq, Generic)
 
-instance Data.Aeson.FromJSON LimitRangeItem
-instance Data.Aeson.ToJSON LimitRangeItem
+$(deriveJSON defaultOptions{fieldLabelModifier = (\n -> if Prelude.last n == '_' then Prelude.take ((Prelude.length n) - 1 ) n else n)} ''LimitRangeItem)

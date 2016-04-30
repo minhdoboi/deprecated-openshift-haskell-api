@@ -11,7 +11,6 @@ import GHC.Generics
 import Data.Text
 import Openshift.V1.SourceControlUser
 
-
 -- | 
 data GitSourceRevision = GitSourceRevision
     { commit :: Maybe Text -- ^ hash identifying a specific commit 

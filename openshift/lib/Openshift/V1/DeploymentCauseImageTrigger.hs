@@ -10,7 +10,6 @@ import qualified Data.Aeson
 import GHC.Generics
 import Openshift.V1.ObjectReference
 
-
 -- | 
 data DeploymentCauseImageTrigger = DeploymentCauseImageTrigger
     { from :: ObjectReference -- ^ a reference the changed object which triggered a deployment 

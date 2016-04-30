@@ -3,13 +3,14 @@
 {-# LANGUAGE TypeOperators #-}
 {-# LANGUAGE OverloadedStrings #-}
 {-# LANGUAGE GeneralizedNewtypeDeriving #-}
+{-# LANGUAGE TemplateHaskell #-}
 
 module Kubernetes.V1.PodCondition where
 
 import qualified Data.Aeson
 import GHC.Generics
 import Data.Text
-
+import Data.Aeson.TH (deriveJSON, defaultOptions, fieldLabelModifier)
 
 -- | PodCondition contains details for the current condition of this pod.
 data PodCondition = PodCondition
@@ -21,5 +22,4 @@ data PodCondition = PodCondition
     , message :: Maybe Text -- ^ Human-readable message indicating details about last transition. 
     } deriving (Show, Eq, Generic)
 
-instance Data.Aeson.FromJSON PodCondition
-instance Data.Aeson.ToJSON PodCondition
+$(deriveJSON defaultOptions{fieldLabelModifier = (\n -> if Prelude.last n == '_' then Prelude.take ((Prelude.length n) - 1 ) n else n)} ''PodCondition)

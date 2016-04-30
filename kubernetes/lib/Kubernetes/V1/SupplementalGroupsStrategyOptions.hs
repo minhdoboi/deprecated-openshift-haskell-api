@@ -3,6 +3,7 @@
 {-# LANGUAGE TypeOperators #-}
 {-# LANGUAGE OverloadedStrings #-}
 {-# LANGUAGE GeneralizedNewtypeDeriving #-}
+{-# LANGUAGE TemplateHaskell #-}
 
 module Kubernetes.V1.SupplementalGroupsStrategyOptions where
 
@@ -10,7 +11,7 @@ import qualified Data.Aeson
 import GHC.Generics
 import Data.Text
 import Kubernetes.V1.IDRange
-
+import Data.Aeson.TH (deriveJSON, defaultOptions, fieldLabelModifier)
 
 -- | 
 data SupplementalGroupsStrategyOptions = SupplementalGroupsStrategyOptions
@@ -18,5 +19,4 @@ data SupplementalGroupsStrategyOptions = SupplementalGroupsStrategyOptions
     , ranges :: Maybe [IDRange] -- ^ ranges of allowable IDs for supplemental groups 
     } deriving (Show, Eq, Generic)
 
-instance Data.Aeson.FromJSON SupplementalGroupsStrategyOptions
-instance Data.Aeson.ToJSON SupplementalGroupsStrategyOptions
+$(deriveJSON defaultOptions{fieldLabelModifier = (\n -> if Prelude.last n == '_' then Prelude.take ((Prelude.length n) - 1 ) n else n)} ''SupplementalGroupsStrategyOptions)

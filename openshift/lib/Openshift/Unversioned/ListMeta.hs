@@ -10,7 +10,6 @@ import qualified Data.Aeson
 import GHC.Generics
 import Data.Text
 
-
 -- | ListMeta describes metadata that synthetic resources must have, including lists and various status objects. A resource may have only one of {ObjectMeta, ListMeta}.
 data ListMeta = ListMeta
     { selfLink :: Maybe Text -- ^ SelfLink is a URL representing this object. Populated by the system. Read-only. 

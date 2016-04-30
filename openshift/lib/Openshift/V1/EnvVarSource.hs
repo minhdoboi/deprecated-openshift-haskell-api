@@ -10,7 +10,6 @@ import qualified Data.Aeson
 import GHC.Generics
 import Openshift.V1.ObjectFieldSelector
 
-
 -- | EnvVarSource represents a source for the value of an EnvVar.
 data EnvVarSource = EnvVarSource
     { fieldRef :: ObjectFieldSelector -- ^ Selects a field of the pod. Only name and namespace are supported. 

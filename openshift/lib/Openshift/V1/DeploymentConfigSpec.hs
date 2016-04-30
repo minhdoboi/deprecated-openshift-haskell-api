@@ -13,7 +13,6 @@ import Openshift.V1.DeploymentStrategy
 import Openshift.V1.DeploymentTriggerPolicy
 import Openshift.V1.PodTemplateSpec
 
-
 -- | 
 data DeploymentConfigSpec = DeploymentConfigSpec
     { strategy :: DeploymentStrategy -- ^ how a deployment is executed 

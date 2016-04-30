@@ -3,13 +3,14 @@
 {-# LANGUAGE TypeOperators #-}
 {-# LANGUAGE OverloadedStrings #-}
 {-# LANGUAGE GeneralizedNewtypeDeriving #-}
+{-# LANGUAGE TemplateHaskell #-}
 
 module Kubernetes.V1.SELinuxOptions where
 
 import qualified Data.Aeson
 import GHC.Generics
 import Data.Text
-
+import Data.Aeson.TH (deriveJSON, defaultOptions, fieldLabelModifier)
 
 -- | SELinuxOptions are the labels to be applied to the container
 data SELinuxOptions = SELinuxOptions
@@ -19,5 +20,4 @@ data SELinuxOptions = SELinuxOptions
     , level :: Maybe Text -- ^ Level is SELinux level label that applies to the container. 
     } deriving (Show, Eq, Generic)
 
-instance Data.Aeson.FromJSON SELinuxOptions
-instance Data.Aeson.ToJSON SELinuxOptions
+$(deriveJSON defaultOptions{fieldLabelModifier = (\n -> if Prelude.last n == '_' then Prelude.take ((Prelude.length n) - 1 ) n else n)} ''SELinuxOptions)

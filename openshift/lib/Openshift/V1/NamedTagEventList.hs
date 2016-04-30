@@ -12,7 +12,6 @@ import Data.Text
 import Openshift.V1.TagEvent
 import Openshift.V1.TagEventCondition
 
-
 -- | 
 data NamedTagEventList = NamedTagEventList
     { tag :: Text -- ^ the tag 

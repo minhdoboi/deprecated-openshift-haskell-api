@@ -10,7 +10,6 @@ import qualified Data.Aeson
 import GHC.Generics
 import Openshift.V1.LifecycleHook
 
-
 -- | 
 data RecreateDeploymentStrategyParams = RecreateDeploymentStrategyParams
     { timeoutSeconds :: Maybe Integer -- ^ the time to wait for updates before giving up 

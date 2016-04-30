@@ -10,7 +10,6 @@ import qualified Data.Aeson
 import GHC.Generics
 import Data.Text
 
-
 -- | VolumeMount describes a mounting of a Volume within a container.
 data VolumeMount = VolumeMount
     { name :: Text -- ^ This must match the Name of a Volume. 

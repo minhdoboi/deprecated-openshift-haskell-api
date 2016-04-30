@@ -3,13 +3,14 @@
 {-# LANGUAGE TypeOperators #-}
 {-# LANGUAGE OverloadedStrings #-}
 {-# LANGUAGE GeneralizedNewtypeDeriving #-}
+{-# LANGUAGE TemplateHaskell #-}
 
 module Kubernetes.V1.NodeAddress where
 
 import qualified Data.Aeson
 import GHC.Generics
 import Data.Text
-
+import Data.Aeson.TH (deriveJSON, defaultOptions, fieldLabelModifier)
 
 -- | NodeAddress contains information for the node's address.
 data NodeAddress = NodeAddress
@@ -17,5 +18,4 @@ data NodeAddress = NodeAddress
     , address :: Text -- ^ The node address. 
     } deriving (Show, Eq, Generic)
 
-instance Data.Aeson.FromJSON NodeAddress
-instance Data.Aeson.ToJSON NodeAddress
+$(deriveJSON defaultOptions{fieldLabelModifier = (\n -> if Prelude.last n == '_' then Prelude.take ((Prelude.length n) - 1 ) n else n)} ''NodeAddress)

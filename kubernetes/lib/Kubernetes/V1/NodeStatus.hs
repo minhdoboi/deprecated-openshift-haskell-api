@@ -15,7 +15,6 @@ import Kubernetes.V1.NodeCondition
 import Kubernetes.V1.NodeDaemonEndpoints
 import Kubernetes.V1.NodeSystemInfo
 
-
 -- | NodeStatus is information about the current status of a node.
 data NodeStatus = NodeStatus
     { capacity :: Maybe Any -- ^ Capacity represents the available resources of a node. More info: http://releases.k8s.io/HEAD/docs/user-guide/persistent-volumes.md#capacity for more details. 

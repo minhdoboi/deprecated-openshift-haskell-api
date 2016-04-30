@@ -10,7 +10,6 @@ import qualified Data.Aeson
 import GHC.Generics
 import Data.Text
 
-
 -- | ContainerStateWaiting is a waiting state of a container.
 data ContainerStateWaiting = ContainerStateWaiting
     { reason :: Maybe Text -- ^ (brief) reason the container is not yet running. 

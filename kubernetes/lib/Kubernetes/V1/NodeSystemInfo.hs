@@ -10,7 +10,6 @@ import qualified Data.Aeson
 import GHC.Generics
 import Data.Text
 
-
 -- | NodeSystemInfo is a set of ids/uuids to uniquely identify the node.
 data NodeSystemInfo = NodeSystemInfo
     { machineID :: Text -- ^ Machine ID reported by the node. 

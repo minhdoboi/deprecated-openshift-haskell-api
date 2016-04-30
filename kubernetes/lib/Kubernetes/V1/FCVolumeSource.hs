@@ -10,7 +10,6 @@ import qualified Data.Aeson
 import GHC.Generics
 import Data.Text
 
-
 -- | A Fibre Channel Disk can only be mounted as read/write once.
 data FCVolumeSource = FCVolumeSource
     { targetWWNs :: [Text] -- ^ Required: FC target world wide names (WWNs) 

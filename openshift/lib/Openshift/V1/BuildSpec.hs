@@ -15,7 +15,6 @@ import Openshift.V1.BuildStrategy
 import Openshift.V1.ResourceRequirements
 import Openshift.V1.SourceRevision
 
-
 -- | 
 data BuildSpec = BuildSpec
     { serviceAccount :: Maybe Text -- ^ the name of the service account to use to run pods created by the build, pod will be allowed to use secrets referenced by the service account 

@@ -11,7 +11,6 @@ import GHC.Generics
 import Data.Text
 import Openshift.V1.EnvVar
 
-
 -- | 
 data ExecNewPodHook = ExecNewPodHook
     { command :: [Text] -- ^ the hook command and its arguments 

@@ -9,7 +9,6 @@ module Openshift.V1.FinalizerName where
 import qualified Data.Aeson
 import GHC.Generics
 
-
 -- | 
 data FinalizerName = FinalizerName
     { 

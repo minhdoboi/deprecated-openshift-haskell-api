@@ -3,6 +3,7 @@
 {-# LANGUAGE TypeOperators #-}
 {-# LANGUAGE OverloadedStrings #-}
 {-# LANGUAGE GeneralizedNewtypeDeriving #-}
+{-# LANGUAGE TemplateHaskell #-}
 
 module Openshift.V1.DeploymentStrategy where
 
@@ -14,7 +15,7 @@ import Openshift.V1.CustomDeploymentStrategyParams
 import Openshift.V1.RecreateDeploymentStrategyParams
 import Openshift.V1.ResourceRequirements
 import Openshift.V1.RollingDeploymentStrategyParams
-
+import Data.Aeson.TH (deriveJSON, defaultOptions, fieldLabelModifier)
 
 -- | 
 data DeploymentStrategy = DeploymentStrategy
@@ -27,5 +28,4 @@ data DeploymentStrategy = DeploymentStrategy
     , annotations :: Maybe Any -- ^ annotations for deployer and hook pods 
     } deriving (Show, Eq, Generic)
 
-instance Data.Aeson.FromJSON DeploymentStrategy
-instance Data.Aeson.ToJSON DeploymentStrategy
+$(deriveJSON defaultOptions{fieldLabelModifier = (\n -> if Prelude.last n == '_' then Prelude.take ((Prelude.length n) - 1 ) n else n)} ''DeploymentStrategy)

@@ -9,7 +9,6 @@ module Openshift.V1.RouteStatus where
 import qualified Data.Aeson
 import GHC.Generics
 
-
 -- | 
 data RouteStatus = RouteStatus
     { 

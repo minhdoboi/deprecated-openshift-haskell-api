@@ -27,7 +27,6 @@ import Openshift.V1.PersistentVolumeClaimVolumeSource
 import Openshift.V1.RBDVolumeSource
 import Openshift.V1.SecretVolumeSource
 
-
 -- | Volume represents a named volume in a pod that may be accessed by any container in the pod.
 data Volume = Volume
     { name :: Text -- ^ Volume's name. Must be a DNS_LABEL and unique within the pod. More info: http://releases.k8s.io/HEAD/docs/user-guide/identifiers.md#names 

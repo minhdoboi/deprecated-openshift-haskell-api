@@ -3,6 +3,7 @@
 {-# LANGUAGE TypeOperators #-}
 {-# LANGUAGE OverloadedStrings #-}
 {-# LANGUAGE GeneralizedNewtypeDeriving #-}
+{-# LANGUAGE TemplateHaskell #-}
 
 module Kubernetes.V1.Event where
 
@@ -12,7 +13,7 @@ import Data.Text
 import Kubernetes.V1.EventSource
 import Kubernetes.V1.ObjectMeta
 import Kubernetes.V1.ObjectReference
-
+import Data.Aeson.TH (deriveJSON, defaultOptions, fieldLabelModifier)
 
 -- | Event is a report of an event somewhere in the cluster.
 data Event = Event
@@ -29,5 +30,4 @@ data Event = Event
     , type_ :: Maybe Text -- ^ Type of this event (Normal, Warning), new types could be added in the future 
     } deriving (Show, Eq, Generic)
 
-instance Data.Aeson.FromJSON Event
-instance Data.Aeson.ToJSON Event
+$(deriveJSON defaultOptions{fieldLabelModifier = (\n -> if Prelude.last n == '_' then Prelude.take ((Prelude.length n) - 1 ) n else n)} ''Event)

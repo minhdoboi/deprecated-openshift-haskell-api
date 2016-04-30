@@ -12,7 +12,6 @@ import Data.Text
 import Openshift.Unversioned.Status
 import Openshift.V1.Image
 
-
 -- | 
 data ImageImportStatus = ImageImportStatus
     { status :: Status -- ^ the status of the image import, including errors encountered while retrieving the image 

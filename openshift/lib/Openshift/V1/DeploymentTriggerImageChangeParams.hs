@@ -11,7 +11,6 @@ import GHC.Generics
 import Data.Text
 import Openshift.V1.ObjectReference
 
-
 -- | 
 data DeploymentTriggerImageChangeParams = DeploymentTriggerImageChangeParams
     { automatic :: Maybe Bool -- ^ whether detection of a new tag value should trigger a deployment 

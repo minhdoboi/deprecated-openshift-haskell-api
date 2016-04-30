@@ -11,7 +11,6 @@ import GHC.Generics
 import Data.Text
 import Kubernetes.V1.LocalObjectReference
 
-
 -- | RBDVolumeSource represents a Rados Block Device Mount that lasts the lifetime of a pod
 data RBDVolumeSource = RBDVolumeSource
     { monitors :: [Text] -- ^ A collection of Ceph monitors. More info: http://releases.k8s.io/HEAD/examples/rbd/README.md#how-to-use-it 

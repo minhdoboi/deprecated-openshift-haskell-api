@@ -17,7 +17,6 @@ import Openshift.V1.ResourceRequirements
 import Openshift.V1.SecurityContext
 import Openshift.V1.VolumeMount
 
-
 -- | A single application container that you want to run within a pod.
 data Container = Container
     { name :: Text -- ^ Name of the container specified as a DNS_LABEL. Each container in a pod must have a unique name (DNS_LABEL). Cannot be updated. 

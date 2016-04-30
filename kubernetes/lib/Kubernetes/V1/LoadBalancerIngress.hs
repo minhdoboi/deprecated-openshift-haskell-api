@@ -10,7 +10,6 @@ import qualified Data.Aeson
 import GHC.Generics
 import Data.Text
 
-
 -- | LoadBalancerIngress represents the status of a load-balancer ingress point: traffic intended for the service should be sent to an ingress point.
 data LoadBalancerIngress = LoadBalancerIngress
     { ip :: Maybe Text -- ^ IP is set for load-balancer ingress points that are IP based (typically GCE or OpenStack load-balancers) 

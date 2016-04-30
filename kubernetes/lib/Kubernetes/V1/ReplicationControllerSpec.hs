@@ -11,7 +11,6 @@ import GHC.Generics
 import Kubernetes.Any
 import Kubernetes.V1.PodTemplateSpec
 
-
 -- | ReplicationControllerSpec is the specification of a replication controller.
 data ReplicationControllerSpec = ReplicationControllerSpec
     { replicas :: Maybe Integer -- ^ Replicas is the number of desired replicas. This is a pointer to distinguish between explicit zero and unspecified. Defaults to 1. More info: http://releases.k8s.io/HEAD/docs/user-guide/replication-controller.md#what-is-a-replication-controller 

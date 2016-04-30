@@ -10,7 +10,6 @@ import qualified Data.Aeson
 import GHC.Generics
 import Data.Text
 
-
 -- | 
 data TagEvent = TagEvent
     { created :: Text -- ^ when the event was created 

@@ -9,7 +9,6 @@ module Openshift.V1.TagImportPolicy where
 import qualified Data.Aeson
 import GHC.Generics
 
-
 -- | 
 data TagImportPolicy = TagImportPolicy
     { insecure :: Maybe Bool -- ^ if true, the server may bypass certificate verification or connect directly over HTTP during image import 

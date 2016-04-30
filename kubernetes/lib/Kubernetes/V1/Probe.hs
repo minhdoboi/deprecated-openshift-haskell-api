@@ -12,7 +12,6 @@ import Kubernetes.V1.ExecAction
 import Kubernetes.V1.HTTPGetAction
 import Kubernetes.V1.TCPSocketAction
 
-
 -- | Probe describes a health check to be performed against a container to determine whether it is alive or ready to receive traffic.
 data Probe = Probe
     { exec :: Maybe ExecAction -- ^ One and only one of the following should be specified. Exec specifies the action to take. 

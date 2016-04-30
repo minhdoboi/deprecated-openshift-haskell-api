@@ -10,7 +10,6 @@ import qualified Data.Aeson
 import GHC.Generics
 import Data.Text
 
-
 -- | 
 data GitBuildSource = GitBuildSource
     { uri :: Text -- ^ points to the source that will be built, structure of the source will depend on the type of build to run 

@@ -10,7 +10,6 @@ import qualified Data.Aeson
 import GHC.Generics
 import Data.Text
 
-
 -- | NodeSpec describes the attributes that a node is created with.
 data NodeSpec = NodeSpec
     { podCIDR :: Maybe Text -- ^ PodCIDR represents the pod IP range assigned to the node. 

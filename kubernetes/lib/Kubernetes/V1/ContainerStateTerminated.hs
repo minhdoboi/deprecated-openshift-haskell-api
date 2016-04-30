@@ -10,7 +10,6 @@ import qualified Data.Aeson
 import GHC.Generics
 import Data.Text
 
-
 -- | ContainerStateTerminated is a terminated state of a container.
 data ContainerStateTerminated = ContainerStateTerminated
     { exitCode :: Integer -- ^ Exit status from the last termination of the container 

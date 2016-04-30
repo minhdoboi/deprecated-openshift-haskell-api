@@ -11,7 +11,6 @@ import GHC.Generics
 import Data.Text
 import Openshift.V1.LocalObjectReference
 
-
 -- | 
 data SecretSpec = SecretSpec
     { secretSource :: LocalObjectReference -- ^ a reference to a secret 

@@ -10,7 +10,6 @@ import qualified Data.Aeson
 import GHC.Generics
 import Data.Text
 
-
 -- | EventSource contains information for an event.
 data EventSource = EventSource
     { component :: Maybe Text -- ^ Component from which the event is generated. 

@@ -10,7 +10,6 @@ import qualified Data.Aeson
 import GHC.Generics
 import Data.Text
 
-
 -- | ObjectReference contains enough information to let you inspect or modify the referred object.
 data ObjectReference = ObjectReference
     { kind :: Maybe Text -- ^ Kind of the referent. More info: http://releases.k8s.io/HEAD/docs/devel/api-conventions.md#types-kinds 

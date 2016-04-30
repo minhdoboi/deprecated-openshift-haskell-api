@@ -10,7 +10,6 @@ import qualified Data.Aeson
 import GHC.Generics
 import Kubernetes.V1.DaemonEndpoint
 
-
 -- | NodeDaemonEndpoints lists ports opened by daemons running on the Node.
 data NodeDaemonEndpoints = NodeDaemonEndpoints
     { kubeletEndpoint :: Maybe DaemonEndpoint -- ^ Endpoint on which Kubelet is listening. 

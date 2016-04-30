@@ -11,7 +11,6 @@ import GHC.Generics
 import Openshift.V1.LocalObjectReference
 import Openshift.V1.ObjectReference
 
-
 -- | 
 data BuildOutput = BuildOutput
     { to :: Maybe ObjectReference -- ^ The optional image stream to push the output of this build.  The namespace may be empty, in which case, the image stream will be looked up based on the namespace of the build. 

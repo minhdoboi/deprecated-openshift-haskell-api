@@ -11,7 +11,6 @@ import GHC.Generics
 import Data.Text
 import Openshift.V1.ExecNewPodHook
 
-
 -- | 
 data LifecycleHook = LifecycleHook
     { failurePolicy :: Text -- ^ what action to take if the hook fails 

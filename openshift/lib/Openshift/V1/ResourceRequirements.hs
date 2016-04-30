@@ -10,7 +10,6 @@ import qualified Data.Aeson
 import GHC.Generics
 import Openshift.Any
 
-
 -- | ResourceRequirements describes the compute resource requirements.
 data ResourceRequirements = ResourceRequirements
     { limits :: Maybe Any -- ^ Limits describes the maximum amount of compute resources allowed. More info: http://releases.k8s.io/HEAD/docs/design/resources.md#resource-specifications 

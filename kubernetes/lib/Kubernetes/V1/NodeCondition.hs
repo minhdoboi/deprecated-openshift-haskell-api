@@ -3,13 +3,14 @@
 {-# LANGUAGE TypeOperators #-}
 {-# LANGUAGE OverloadedStrings #-}
 {-# LANGUAGE GeneralizedNewtypeDeriving #-}
+{-# LANGUAGE TemplateHaskell #-}
 
 module Kubernetes.V1.NodeCondition where
 
 import qualified Data.Aeson
 import GHC.Generics
 import Data.Text
-
+import Data.Aeson.TH (deriveJSON, defaultOptions, fieldLabelModifier)
 
 -- | NodeCondition contains condition infromation for a node.
 data NodeCondition = NodeCondition
@@ -21,5 +22,4 @@ data NodeCondition = NodeCondition
     , message :: Maybe Text -- ^ Human readable message indicating details about last transition. 
     } deriving (Show, Eq, Generic)
 
-instance Data.Aeson.FromJSON NodeCondition
-instance Data.Aeson.ToJSON NodeCondition
+$(deriveJSON defaultOptions{fieldLabelModifier = (\n -> if Prelude.last n == '_' then Prelude.take ((Prelude.length n) - 1 ) n else n)} ''NodeCondition)

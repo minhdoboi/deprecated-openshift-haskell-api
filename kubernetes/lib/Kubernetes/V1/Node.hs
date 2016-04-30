@@ -13,7 +13,6 @@ import Kubernetes.V1.NodeSpec
 import Kubernetes.V1.NodeStatus
 import Kubernetes.V1.ObjectMeta
 
-
 -- | Node is a worker node in Kubernetes, formerly known as minion. Each node will have a unique identifier in the cache (i.e. in etcd).
 data Node = Node
     { kind :: Maybe Text -- ^ Kind is a string value representing the REST resource this object represents. Servers may infer this from the endpoint the client submits requests to. Cannot be updated. In CamelCase. More info: http://releases.k8s.io/HEAD/docs/devel/api-conventions.md#types-kinds 

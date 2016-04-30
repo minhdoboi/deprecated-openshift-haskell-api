@@ -12,7 +12,6 @@ import Data.Text
 import Openshift.Unversioned.Status
 import Openshift.V1.ImageImportStatus
 
-
 -- | 
 data RepositoryImportStatus = RepositoryImportStatus
     { status :: Maybe Status -- ^ the result of the import attempt, will include a reason and message if the repository could not be imported 

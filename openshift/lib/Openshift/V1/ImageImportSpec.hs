@@ -12,7 +12,6 @@ import Openshift.V1.LocalObjectReference
 import Openshift.V1.ObjectReference
 import Openshift.V1.TagImportPolicy
 
-
 -- | 
 data ImageImportSpec = ImageImportSpec
     { from :: ObjectReference -- ^ the source of an image to import; only kind DockerImage is allowed 

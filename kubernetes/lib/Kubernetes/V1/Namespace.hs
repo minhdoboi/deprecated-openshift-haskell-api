@@ -13,7 +13,6 @@ import Kubernetes.V1.NamespaceSpec
 import Kubernetes.V1.NamespaceStatus
 import Kubernetes.V1.ObjectMeta
 
-
 -- | Namespace provides a scope for Names. Use of multiple namespaces is optional.
 data Namespace = Namespace
     { kind :: Maybe Text -- ^ Kind is a string value representing the REST resource this object represents. Servers may infer this from the endpoint the client submits requests to. Cannot be updated. In CamelCase. More info: http://releases.k8s.io/HEAD/docs/devel/api-conventions.md#types-kinds 

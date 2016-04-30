@@ -11,7 +11,6 @@ import GHC.Generics
 import Data.Text
 import Openshift.V1.RoleBinding
 
-
 -- | 
 data NamedRoleBinding = NamedRoleBinding
     { name :: Text -- ^ name of the roleBinding 

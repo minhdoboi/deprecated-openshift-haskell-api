@@ -10,7 +10,6 @@ import qualified Data.Aeson
 import GHC.Generics
 import Openshift.Any
 
-
 -- | represents the current status of a scale subresource.
 data ScaleStatus = ScaleStatus
     { replicas :: Integer -- ^ actual number of observed instances of the scaled object. 

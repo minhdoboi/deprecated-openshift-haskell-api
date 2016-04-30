@@ -10,7 +10,6 @@ import qualified Data.Aeson
 import GHC.Generics
 import Data.Text
 
-
 -- | 
 data TLSConfig = TLSConfig
     { termination :: Text -- ^ indicates termination type 

@@ -3,6 +3,7 @@
 {-# LANGUAGE TypeOperators #-}
 {-# LANGUAGE OverloadedStrings #-}
 {-# LANGUAGE GeneralizedNewtypeDeriving #-}
+{-# LANGUAGE TemplateHaskell #-}
 
 module Kubernetes.V1.SELinuxContextStrategyOptions where
 
@@ -10,7 +11,7 @@ import qualified Data.Aeson
 import GHC.Generics
 import Data.Text
 import Kubernetes.V1.SELinuxOptions
-
+import Data.Aeson.TH (deriveJSON, defaultOptions, fieldLabelModifier)
 
 -- | 
 data SELinuxContextStrategyOptions = SELinuxContextStrategyOptions
@@ -18,5 +19,4 @@ data SELinuxContextStrategyOptions = SELinuxContextStrategyOptions
     , seLinuxOptions :: Maybe SELinuxOptions -- ^ seLinuxOptions required to run as; required for MustRunAs 
     } deriving (Show, Eq, Generic)
 
-instance Data.Aeson.FromJSON SELinuxContextStrategyOptions
-instance Data.Aeson.ToJSON SELinuxContextStrategyOptions
+$(deriveJSON defaultOptions{fieldLabelModifier = (\n -> if Prelude.last n == '_' then Prelude.take ((Prelude.length n) - 1 ) n else n)} ''SELinuxContextStrategyOptions)

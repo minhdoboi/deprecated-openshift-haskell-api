@@ -3,6 +3,7 @@
 {-# LANGUAGE TypeOperators #-}
 {-# LANGUAGE OverloadedStrings #-}
 {-# LANGUAGE GeneralizedNewtypeDeriving #-}
+{-# LANGUAGE TemplateHaskell #-}
 
 module Openshift.V1.BuildSource where
 
@@ -14,7 +15,7 @@ import Openshift.V1.GitBuildSource
 import Openshift.V1.ImageSource
 import Openshift.V1.LocalObjectReference
 import Openshift.V1.SecretBuildSource
-
+import Data.Aeson.TH (deriveJSON, defaultOptions, fieldLabelModifier)
 
 -- | 
 data BuildSource = BuildSource
@@ -28,5 +29,4 @@ data BuildSource = BuildSource
     , secrets :: [SecretBuildSource] -- ^ list of build secrets and destination directories 
     } deriving (Show, Eq, Generic)
 
-instance Data.Aeson.FromJSON BuildSource
-instance Data.Aeson.ToJSON BuildSource
+$(deriveJSON defaultOptions{fieldLabelModifier = (\n -> if Prelude.last n == '_' then Prelude.take ((Prelude.length n) - 1 ) n else n)} ''BuildSource)

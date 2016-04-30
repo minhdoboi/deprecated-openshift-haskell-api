@@ -10,7 +10,6 @@ import qualified Data.Aeson
 import GHC.Generics
 import Data.Text
 
-
 -- | HTTPGetAction describes an action based on HTTP Get requests.
 data HTTPGetAction = HTTPGetAction
     { path :: Maybe Text -- ^ Path to access on the HTTP server. 

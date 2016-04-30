@@ -10,7 +10,6 @@ import qualified Data.Aeson
 import GHC.Generics
 import Data.Text
 
-
 -- | 
 data SourceControlUser = SourceControlUser
     { name :: Maybe Text -- ^ name of the source control user 

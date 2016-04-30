@@ -10,7 +10,6 @@ import qualified Data.Aeson
 import GHC.Generics
 import Data.Text
 
-
 -- | 
 data ProjectStatus = ProjectStatus
     { phase :: Maybe Text -- ^ phase is the current lifecycle phase of the project 

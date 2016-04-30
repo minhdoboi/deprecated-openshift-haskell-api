@@ -3,13 +3,14 @@
 {-# LANGUAGE TypeOperators #-}
 {-# LANGUAGE OverloadedStrings #-}
 {-# LANGUAGE GeneralizedNewtypeDeriving #-}
+{-# LANGUAGE TemplateHaskell #-}
 
 module Kubernetes.Json.WatchEvent where
 
 import qualified Data.Aeson
 import GHC.Generics
 import Data.Text
-
+import Data.Aeson.TH (deriveJSON, defaultOptions, fieldLabelModifier)
 
 -- | 
 data WatchEvent = WatchEvent
@@ -17,5 +18,4 @@ data WatchEvent = WatchEvent
     , object :: Maybe Text -- ^ the object being watched; will match the type of the resource endpoint or be a Status object if the type is ERROR 
     } deriving (Show, Eq, Generic)
 
-instance Data.Aeson.FromJSON WatchEvent
-instance Data.Aeson.ToJSON WatchEvent
+$(deriveJSON defaultOptions{fieldLabelModifier = (\n -> if Prelude.last n == '_' then Prelude.take ((Prelude.length n) - 1 ) n else n)} ''WatchEvent)

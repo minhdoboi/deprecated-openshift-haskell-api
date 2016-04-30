@@ -11,7 +11,6 @@ import GHC.Generics
 import Openshift.V1.ObjectReference
 import Openshift.V1.TagImportPolicy
 
-
 -- | 
 data RepositoryImportSpec = RepositoryImportSpec
     { from :: ObjectReference -- ^ the source for the image repository to import; only kind DockerImage and a name of a Docker image repository is allowed 

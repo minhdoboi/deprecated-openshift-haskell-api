@@ -11,7 +11,6 @@ import GHC.Generics
 import Data.Text
 import Openshift.V1.TagReference
 
-
 -- | 
 data ImageStreamSpec = ImageStreamSpec
     { dockerImageRepository :: Maybe Text -- ^ optional field if specified this stream is backed by a Docker repository on this server 

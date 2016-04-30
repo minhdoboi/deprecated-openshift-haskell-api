@@ -3,13 +3,14 @@
 {-# LANGUAGE TypeOperators #-}
 {-# LANGUAGE OverloadedStrings #-}
 {-# LANGUAGE GeneralizedNewtypeDeriving #-}
+{-# LANGUAGE TemplateHaskell #-}
 
 module Openshift.V1.TagEventCondition where
 
 import qualified Data.Aeson
 import GHC.Generics
 import Data.Text
-
+import Data.Aeson.TH (deriveJSON, defaultOptions, fieldLabelModifier)
 
 -- | 
 data TagEventCondition = TagEventCondition
@@ -21,5 +22,4 @@ data TagEventCondition = TagEventCondition
     , generation :: Integer -- ^ the generation of the image stream spec tag this condition represents 
     } deriving (Show, Eq, Generic)
 
-instance Data.Aeson.FromJSON TagEventCondition
-instance Data.Aeson.ToJSON TagEventCondition
+$(deriveJSON defaultOptions{fieldLabelModifier = (\n -> if Prelude.last n == '_' then Prelude.take ((Prelude.length n) - 1 ) n else n)} ''TagEventCondition)

@@ -3,6 +3,7 @@
 {-# LANGUAGE TypeOperators #-}
 {-# LANGUAGE OverloadedStrings #-}
 {-# LANGUAGE GeneralizedNewtypeDeriving #-}
+{-# LANGUAGE TemplateHaskell #-}
 
 module Openshift.V1.ImageStreamImportSpec where
 
@@ -10,7 +11,7 @@ import qualified Data.Aeson
 import GHC.Generics
 import Openshift.V1.ImageImportSpec
 import Openshift.V1.RepositoryImportSpec
-
+import Data.Aeson.TH (deriveJSON, defaultOptions, fieldLabelModifier)
 
 -- | 
 data ImageStreamImportSpec = ImageStreamImportSpec
@@ -19,5 +20,4 @@ data ImageStreamImportSpec = ImageStreamImportSpec
     , images :: Maybe [ImageImportSpec] -- ^ a list of images to import into this image stream 
     } deriving (Show, Eq, Generic)
 
-instance Data.Aeson.FromJSON ImageStreamImportSpec
-instance Data.Aeson.ToJSON ImageStreamImportSpec
+$(deriveJSON defaultOptions{fieldLabelModifier = (\n -> if Prelude.last n == '_' then Prelude.take ((Prelude.length n) - 1 ) n else n)} ''ImageStreamImportSpec)

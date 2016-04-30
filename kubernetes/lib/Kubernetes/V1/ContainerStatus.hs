@@ -11,7 +11,6 @@ import GHC.Generics
 import Data.Text
 import Kubernetes.V1.ContainerState
 
-
 -- | ContainerStatus contains details for the current status of this container.
 data ContainerStatus = ContainerStatus
     { name :: Text -- ^ This must be a DNS_LABEL. Each container in a pod must have a unique name. Cannot be updated. 

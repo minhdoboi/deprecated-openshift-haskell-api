@@ -14,7 +14,6 @@ import Openshift.V1.LocalObjectReference
 import Openshift.V1.ObjectReference
 import Openshift.V1.SecretSpec
 
-
 -- | 
 data CustomBuildStrategy = CustomBuildStrategy
     { from :: ObjectReference -- ^ reference to an image stream, image stream tag, or image stream image from which the Docker image should be pulled 

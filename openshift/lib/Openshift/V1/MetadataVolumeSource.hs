@@ -10,7 +10,6 @@ import qualified Data.Aeson
 import GHC.Generics
 import Openshift.V1.MetadataFile
 
-
 -- | 
 data MetadataVolumeSource = MetadataVolumeSource
     { items :: Maybe [MetadataFile] -- ^ list of metadata files 

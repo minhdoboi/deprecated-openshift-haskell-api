@@ -11,7 +11,6 @@ import GHC.Generics
 import Data.Text
 import Openshift.V1.ObjectReference
 
-
 -- | 
 data ImageChangeTrigger = ImageChangeTrigger
     { lastTriggeredImageID :: Maybe Text -- ^ used internally to save last used image ID for build 

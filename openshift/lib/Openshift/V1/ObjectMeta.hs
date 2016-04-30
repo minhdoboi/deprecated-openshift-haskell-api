@@ -11,7 +11,6 @@ import GHC.Generics
 import Data.Text
 import Openshift.Any
 
-
 -- | ObjectMeta is metadata that all persisted resources must have, which includes all objects users must create.
 data ObjectMeta = ObjectMeta
     { name :: Maybe Text -- ^ Name must be unique within a namespace. Is required when creating resources, although some resources may allow a client to request the generation of an appropriate name automatically. Name is primarily intended for creation idempotence and configuration definition. Cannot be updated. More info: http://releases.k8s.io/HEAD/docs/user-guide/identifiers.md#names 

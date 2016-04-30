@@ -10,7 +10,6 @@ import qualified Data.Aeson
 import GHC.Generics
 import Data.Text
 
-
 -- | StatusCause provides more information about an api.Status failure, including cases when multiple errors are encountered.
 data StatusCause = StatusCause
     { reason :: Maybe Text -- ^ A machine-readable description of the cause of the error. If this value is empty there is no information available. 

@@ -13,7 +13,6 @@ import Openshift.V1.ObjectReference
 import Openshift.V1.RoutePort
 import Openshift.V1.TLSConfig
 
-
 -- | 
 data RouteSpec = RouteSpec
     { host :: Text -- ^ optional: alias/dns that points to the service, must follow DNS 952 subdomain conventions 

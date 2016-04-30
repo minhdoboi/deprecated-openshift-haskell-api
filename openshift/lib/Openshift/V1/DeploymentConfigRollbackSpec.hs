@@ -10,7 +10,6 @@ import qualified Data.Aeson
 import GHC.Generics
 import Openshift.V1.ObjectReference
 
-
 -- | 
 data DeploymentConfigRollbackSpec = DeploymentConfigRollbackSpec
     { from :: ObjectReference -- ^ a reference to a deployment, which is a ReplicationController 
