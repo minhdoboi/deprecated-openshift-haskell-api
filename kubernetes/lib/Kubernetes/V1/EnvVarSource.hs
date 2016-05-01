@@ -6,9 +6,9 @@
 
 module Kubernetes.V1.EnvVarSource where
 
-import qualified Data.Aeson
 import GHC.Generics
 import Kubernetes.V1.ObjectFieldSelector
+import qualified Data.Aeson
 
 -- | EnvVarSource represents a source for the value of an EnvVar.
 data EnvVarSource = EnvVarSource

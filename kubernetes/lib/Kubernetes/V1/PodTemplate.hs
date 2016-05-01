@@ -6,11 +6,11 @@
 
 module Kubernetes.V1.PodTemplate where
 
-import qualified Data.Aeson
 import GHC.Generics
 import Data.Text
 import Kubernetes.V1.ObjectMeta
 import Kubernetes.V1.PodTemplateSpec
+import qualified Data.Aeson
 
 -- | PodTemplate describes a template for creating copies of a predefined pod.
 data PodTemplate = PodTemplate

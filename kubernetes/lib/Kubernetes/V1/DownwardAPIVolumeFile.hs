@@ -6,10 +6,10 @@
 
 module Kubernetes.V1.DownwardAPIVolumeFile where
 
-import qualified Data.Aeson
 import GHC.Generics
 import Data.Text
 import Kubernetes.V1.ObjectFieldSelector
+import qualified Data.Aeson
 
 -- | DownwardAPIVolumeFile represents information to create the file containing the pod field
 data DownwardAPIVolumeFile = DownwardAPIVolumeFile

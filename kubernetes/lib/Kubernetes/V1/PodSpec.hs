@@ -6,7 +6,6 @@
 
 module Kubernetes.V1.PodSpec where
 
-import qualified Data.Aeson
 import GHC.Generics
 import Data.Text
 import Kubernetes.Any
@@ -14,6 +13,7 @@ import Kubernetes.V1.Container
 import Kubernetes.V1.LocalObjectReference
 import Kubernetes.V1.PodSecurityContext
 import Kubernetes.V1.Volume
+import qualified Data.Aeson
 
 -- | PodSpec is a description of a pod.
 data PodSpec = PodSpec

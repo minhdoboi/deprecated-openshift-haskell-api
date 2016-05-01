@@ -6,10 +6,10 @@
 
 module Kubernetes.V1.MetadataFile where
 
-import qualified Data.Aeson
 import GHC.Generics
 import Data.Text
 import Kubernetes.V1.ObjectFieldSelector
+import qualified Data.Aeson
 
 -- | 
 data MetadataFile = MetadataFile

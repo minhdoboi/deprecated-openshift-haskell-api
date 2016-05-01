@@ -6,7 +6,6 @@
 
 module Openshift.V1.PodSpec where
 
-import qualified Data.Aeson
 import GHC.Generics
 import Data.Text
 import Openshift.Any
@@ -14,6 +13,7 @@ import Openshift.V1.Container
 import Openshift.V1.LocalObjectReference
 import Openshift.V1.PodSecurityContext
 import Openshift.V1.Volume
+import qualified Data.Aeson
 
 -- | PodSpec is a description of a pod.
 data PodSpec = PodSpec

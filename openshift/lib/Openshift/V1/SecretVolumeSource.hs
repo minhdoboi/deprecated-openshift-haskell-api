@@ -6,9 +6,9 @@
 
 module Openshift.V1.SecretVolumeSource where
 
-import qualified Data.Aeson
 import GHC.Generics
 import Data.Text
+import qualified Data.Aeson
 
 -- | SecretVolumeSource adapts a Secret into a VolumeSource. More info: http://releases.k8s.io/HEAD/docs/design/secrets.md
 data SecretVolumeSource = SecretVolumeSource

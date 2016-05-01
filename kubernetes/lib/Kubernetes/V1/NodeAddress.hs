@@ -7,7 +7,6 @@
 
 module Kubernetes.V1.NodeAddress where
 
-import qualified Data.Aeson
 import GHC.Generics
 import Data.Text
 import Data.Aeson.TH (deriveJSON, defaultOptions, fieldLabelModifier)

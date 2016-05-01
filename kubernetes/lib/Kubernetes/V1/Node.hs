@@ -6,12 +6,12 @@
 
 module Kubernetes.V1.Node where
 
-import qualified Data.Aeson
 import GHC.Generics
 import Data.Text
 import Kubernetes.V1.NodeSpec
 import Kubernetes.V1.NodeStatus
 import Kubernetes.V1.ObjectMeta
+import qualified Data.Aeson
 
 -- | Node is a worker node in Kubernetes, formerly known as minion. Each node will have a unique identifier in the cache (i.e. in etcd).
 data Node = Node

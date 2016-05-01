@@ -6,13 +6,13 @@
 
 module Openshift.V1.Template where
 
-import qualified Data.Aeson
 import GHC.Generics
 import Data.Text
 import Kubernetes.V1.ObjectMeta
 import Openshift.Any
 import Openshift.Runtime.RawExtension
 import Openshift.V1.Parameter
+import qualified Data.Aeson
 
 -- | 
 data Template = Template

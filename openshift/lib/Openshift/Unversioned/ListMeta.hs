@@ -6,9 +6,9 @@
 
 module Openshift.Unversioned.ListMeta where
 
-import qualified Data.Aeson
 import GHC.Generics
 import Data.Text
+import qualified Data.Aeson
 
 -- | ListMeta describes metadata that synthetic resources must have, including lists and various status objects. A resource may have only one of {ObjectMeta, ListMeta}.
 data ListMeta = ListMeta

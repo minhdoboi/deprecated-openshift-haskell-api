@@ -6,12 +6,12 @@
 
 module Openshift.V1.SourceBuildStrategy where
 
-import qualified Data.Aeson
 import GHC.Generics
 import Data.Text
 import Openshift.V1.EnvVar
 import Openshift.V1.LocalObjectReference
 import Openshift.V1.ObjectReference
+import qualified Data.Aeson
 
 -- | 
 data SourceBuildStrategy = SourceBuildStrategy

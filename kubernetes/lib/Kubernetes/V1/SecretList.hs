@@ -6,11 +6,11 @@
 
 module Kubernetes.V1.SecretList where
 
-import qualified Data.Aeson
 import GHC.Generics
 import Data.Text
 import Kubernetes.Unversioned.ListMeta
 import Kubernetes.V1.Secret
+import qualified Data.Aeson
 
 -- | SecretList is a list of Secret.
 data SecretList = SecretList

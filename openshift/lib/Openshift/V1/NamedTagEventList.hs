@@ -6,11 +6,11 @@
 
 module Openshift.V1.NamedTagEventList where
 
-import qualified Data.Aeson
 import GHC.Generics
 import Data.Text
 import Openshift.V1.TagEvent
 import Openshift.V1.TagEventCondition
+import qualified Data.Aeson
 
 -- | 
 data NamedTagEventList = NamedTagEventList

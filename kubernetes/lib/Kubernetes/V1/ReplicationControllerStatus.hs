@@ -6,8 +6,8 @@
 
 module Kubernetes.V1.ReplicationControllerStatus where
 
-import qualified Data.Aeson
 import GHC.Generics
+import qualified Data.Aeson
 
 -- | ReplicationControllerStatus represents the current status of a replication controller.
 data ReplicationControllerStatus = ReplicationControllerStatus

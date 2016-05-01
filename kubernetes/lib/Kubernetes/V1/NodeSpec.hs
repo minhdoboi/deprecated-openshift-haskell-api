@@ -6,9 +6,9 @@
 
 module Kubernetes.V1.NodeSpec where
 
-import qualified Data.Aeson
 import GHC.Generics
 import Data.Text
+import qualified Data.Aeson
 
 -- | NodeSpec describes the attributes that a node is created with.
 data NodeSpec = NodeSpec

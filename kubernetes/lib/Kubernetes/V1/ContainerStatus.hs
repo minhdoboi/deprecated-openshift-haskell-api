@@ -6,10 +6,10 @@
 
 module Kubernetes.V1.ContainerStatus where
 
-import qualified Data.Aeson
 import GHC.Generics
 import Data.Text
 import Kubernetes.V1.ContainerState
+import qualified Data.Aeson
 
 -- | ContainerStatus contains details for the current status of this container.
 data ContainerStatus = ContainerStatus

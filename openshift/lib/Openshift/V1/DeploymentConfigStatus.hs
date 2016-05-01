@@ -6,9 +6,9 @@
 
 module Openshift.V1.DeploymentConfigStatus where
 
-import qualified Data.Aeson
 import GHC.Generics
 import Openshift.V1.DeploymentDetails
+import qualified Data.Aeson
 
 -- | 
 data DeploymentConfigStatus = DeploymentConfigStatus

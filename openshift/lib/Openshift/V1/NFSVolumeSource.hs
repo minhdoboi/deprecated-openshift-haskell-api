@@ -6,9 +6,9 @@
 
 module Openshift.V1.NFSVolumeSource where
 
-import qualified Data.Aeson
 import GHC.Generics
 import Data.Text
+import qualified Data.Aeson
 
 -- | NFSVolumeSource represents an NFS mount that lasts the lifetime of a pod
 data NFSVolumeSource = NFSVolumeSource

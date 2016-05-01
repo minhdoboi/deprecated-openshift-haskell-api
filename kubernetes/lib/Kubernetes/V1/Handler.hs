@@ -6,11 +6,11 @@
 
 module Kubernetes.V1.Handler where
 
-import qualified Data.Aeson
 import GHC.Generics
 import Kubernetes.V1.ExecAction
 import Kubernetes.V1.HTTPGetAction
 import Kubernetes.V1.TCPSocketAction
+import qualified Data.Aeson
 
 -- | Handler defines a specific action that should be taken
 data Handler = Handler

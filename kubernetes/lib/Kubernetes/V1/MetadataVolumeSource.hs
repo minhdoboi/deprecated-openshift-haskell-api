@@ -6,9 +6,9 @@
 
 module Kubernetes.V1.MetadataVolumeSource where
 
-import qualified Data.Aeson
 import GHC.Generics
 import Kubernetes.V1.MetadataFile
+import qualified Data.Aeson
 
 -- | 
 data MetadataVolumeSource = MetadataVolumeSource

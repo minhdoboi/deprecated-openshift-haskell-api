@@ -6,11 +6,11 @@
 
 module Kubernetes.V1.NamespaceList where
 
-import qualified Data.Aeson
 import GHC.Generics
 import Data.Text
 import Kubernetes.Unversioned.ListMeta
 import Kubernetes.V1.Namespace
+import qualified Data.Aeson
 
 -- | NamespaceList is a list of Namespaces.
 data NamespaceList = NamespaceList

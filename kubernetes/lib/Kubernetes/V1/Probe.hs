@@ -6,11 +6,11 @@
 
 module Kubernetes.V1.Probe where
 
-import qualified Data.Aeson
 import GHC.Generics
 import Kubernetes.V1.ExecAction
 import Kubernetes.V1.HTTPGetAction
 import Kubernetes.V1.TCPSocketAction
+import qualified Data.Aeson
 
 -- | Probe describes a health check to be performed against a container to determine whether it is alive or ready to receive traffic.
 data Probe = Probe

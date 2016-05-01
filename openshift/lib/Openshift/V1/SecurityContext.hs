@@ -6,10 +6,10 @@
 
 module Openshift.V1.SecurityContext where
 
-import qualified Data.Aeson
 import GHC.Generics
 import Openshift.V1.Capabilities
 import Openshift.V1.SELinuxOptions
+import qualified Data.Aeson
 
 -- | SecurityContext holds security configuration that will be applied to a container. Some fields are present in both SecurityContext and PodSecurityContext.  When both are set, the values in SecurityContext take precedence.
 data SecurityContext = SecurityContext

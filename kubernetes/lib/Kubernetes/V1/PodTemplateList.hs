@@ -6,11 +6,11 @@
 
 module Kubernetes.V1.PodTemplateList where
 
-import qualified Data.Aeson
 import GHC.Generics
 import Data.Text
 import Kubernetes.Unversioned.ListMeta
 import Kubernetes.V1.PodTemplate
+import qualified Data.Aeson
 
 -- | PodTemplateList is a list of PodTemplates.
 data PodTemplateList = PodTemplateList

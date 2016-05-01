@@ -6,9 +6,9 @@
 
 module Kubernetes.V1.LoadBalancerIngress where
 
-import qualified Data.Aeson
 import GHC.Generics
 import Data.Text
+import qualified Data.Aeson
 
 -- | LoadBalancerIngress represents the status of a load-balancer ingress point: traffic intended for the service should be sent to an ingress point.
 data LoadBalancerIngress = LoadBalancerIngress

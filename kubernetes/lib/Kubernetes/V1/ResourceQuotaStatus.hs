@@ -6,9 +6,9 @@
 
 module Kubernetes.V1.ResourceQuotaStatus where
 
-import qualified Data.Aeson
 import GHC.Generics
 import Kubernetes.Any
+import qualified Data.Aeson
 
 -- | ResourceQuotaStatus defines the enforced hard limits and observed use.
 data ResourceQuotaStatus = ResourceQuotaStatus

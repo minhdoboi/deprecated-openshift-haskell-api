@@ -6,11 +6,11 @@
 
 module Openshift.V1.ImageImportSpec where
 
-import qualified Data.Aeson
 import GHC.Generics
 import Openshift.V1.LocalObjectReference
 import Openshift.V1.ObjectReference
 import Openshift.V1.TagImportPolicy
+import qualified Data.Aeson
 
 -- | 
 data ImageImportSpec = ImageImportSpec

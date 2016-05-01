@@ -6,11 +6,11 @@
 
 module Kubernetes.V1.LimitRangeList where
 
-import qualified Data.Aeson
 import GHC.Generics
 import Data.Text
 import Kubernetes.Unversioned.ListMeta
 import Kubernetes.V1.LimitRange
+import qualified Data.Aeson
 
 -- | LimitRangeList is a list of LimitRange items.
 data LimitRangeList = LimitRangeList

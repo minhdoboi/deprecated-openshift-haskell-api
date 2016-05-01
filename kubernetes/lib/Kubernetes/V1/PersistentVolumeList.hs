@@ -6,11 +6,11 @@
 
 module Kubernetes.V1.PersistentVolumeList where
 
-import qualified Data.Aeson
 import GHC.Generics
 import Data.Text
 import Kubernetes.Unversioned.ListMeta
 import Kubernetes.V1.PersistentVolume
+import qualified Data.Aeson
 
 -- | PersistentVolumeList is a list of PersistentVolume items.
 data PersistentVolumeList = PersistentVolumeList

@@ -6,12 +6,12 @@
 
 module Openshift.V1.Route where
 
-import qualified Data.Aeson
 import GHC.Generics
 import Data.Text
 import Kubernetes.V1.ObjectMeta
 import Openshift.V1.RouteSpec
 import Openshift.V1.RouteStatus
+import qualified Data.Aeson
 
 -- | 
 data Route = Route

@@ -6,9 +6,9 @@
 
 module Kubernetes.V1.EndpointPort where
 
-import qualified Data.Aeson
 import GHC.Generics
 import Data.Text
+import qualified Data.Aeson
 
 -- | EndpointPort is a tuple that describes a single port.
 data EndpointPort = EndpointPort

@@ -6,12 +6,12 @@
 
 module Kubernetes.V1.PersistentVolumeClaim where
 
-import qualified Data.Aeson
 import GHC.Generics
 import Data.Text
 import Kubernetes.V1.ObjectMeta
 import Kubernetes.V1.PersistentVolumeClaimSpec
 import Kubernetes.V1.PersistentVolumeClaimStatus
+import qualified Data.Aeson
 
 -- | PersistentVolumeClaim is a user's request for and claim to a persistent volume
 data PersistentVolumeClaim = PersistentVolumeClaim

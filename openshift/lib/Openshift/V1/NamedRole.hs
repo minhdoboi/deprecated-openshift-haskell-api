@@ -6,10 +6,10 @@
 
 module Openshift.V1.NamedRole where
 
-import qualified Data.Aeson
 import GHC.Generics
 import Data.Text
 import Openshift.V1.Role
+import qualified Data.Aeson
 
 -- | 
 data NamedRole = NamedRole

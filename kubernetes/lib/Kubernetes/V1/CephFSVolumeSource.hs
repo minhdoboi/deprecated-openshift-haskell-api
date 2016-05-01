@@ -6,10 +6,10 @@
 
 module Kubernetes.V1.CephFSVolumeSource where
 
-import qualified Data.Aeson
 import GHC.Generics
 import Data.Text
 import Kubernetes.V1.LocalObjectReference
+import qualified Data.Aeson
 
 -- | CephFSVolumeSource represents a Ceph Filesystem Mount that lasts the lifetime of a pod
 data CephFSVolumeSource = CephFSVolumeSource

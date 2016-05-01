@@ -6,10 +6,10 @@
 
 module Openshift.V1.NetNamespace where
 
-import qualified Data.Aeson
 import GHC.Generics
 import Data.Text
 import Kubernetes.V1.ObjectMeta
+import qualified Data.Aeson
 
 -- | 
 data NetNamespace = NetNamespace

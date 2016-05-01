@@ -6,9 +6,9 @@
 
 module Kubernetes.V1.GlusterfsVolumeSource where
 
-import qualified Data.Aeson
 import GHC.Generics
 import Data.Text
+import qualified Data.Aeson
 
 -- | GlusterfsVolumeSource represents a Glusterfs Mount that lasts the lifetime of a pod.
 data GlusterfsVolumeSource = GlusterfsVolumeSource

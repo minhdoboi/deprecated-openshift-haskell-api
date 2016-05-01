@@ -6,12 +6,12 @@
 
 module Kubernetes.V1.Namespace where
 
-import qualified Data.Aeson
 import GHC.Generics
 import Data.Text
 import Kubernetes.V1.NamespaceSpec
 import Kubernetes.V1.NamespaceStatus
 import Kubernetes.V1.ObjectMeta
+import qualified Data.Aeson
 
 -- | Namespace provides a scope for Names. Use of multiple namespaces is optional.
 data Namespace = Namespace

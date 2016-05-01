@@ -7,7 +7,6 @@
 
 module Openshift.V1.ImageStreamImportStatus where
 
-import qualified Data.Aeson
 import GHC.Generics
 import Openshift.V1.ImageImportStatus
 import Openshift.V1.ImageStream

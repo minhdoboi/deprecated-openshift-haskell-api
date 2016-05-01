@@ -6,9 +6,9 @@
 
 module Openshift.V1.Lifecycle where
 
-import qualified Data.Aeson
 import GHC.Generics
 import Openshift.V1.Handler
+import qualified Data.Aeson
 
 -- | Lifecycle describes actions that the management system should take in response to container lifecycle events. For the PostStart and PreStop lifecycle handlers, management of the container blocks until the action is complete, unless the container process fails, in which case the handler is aborted.
 data Lifecycle = Lifecycle

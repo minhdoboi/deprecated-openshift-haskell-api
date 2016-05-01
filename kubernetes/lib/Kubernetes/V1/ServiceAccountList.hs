@@ -6,11 +6,11 @@
 
 module Kubernetes.V1.ServiceAccountList where
 
-import qualified Data.Aeson
 import GHC.Generics
 import Data.Text
 import Kubernetes.Unversioned.ListMeta
 import Kubernetes.V1.ServiceAccount
+import qualified Data.Aeson
 
 -- | ServiceAccountList is a list of ServiceAccount objects
 data ServiceAccountList = ServiceAccountList

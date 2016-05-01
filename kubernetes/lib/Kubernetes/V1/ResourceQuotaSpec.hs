@@ -6,9 +6,9 @@
 
 module Kubernetes.V1.ResourceQuotaSpec where
 
-import qualified Data.Aeson
 import GHC.Generics
 import Kubernetes.Any
+import qualified Data.Aeson
 
 -- | ResourceQuotaSpec defines the desired hard limits to enforce for Quota.
 data ResourceQuotaSpec = ResourceQuotaSpec

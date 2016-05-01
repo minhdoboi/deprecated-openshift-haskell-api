@@ -6,9 +6,9 @@
 
 module Kubernetes.V1.NodeSystemInfo where
 
-import qualified Data.Aeson
 import GHC.Generics
 import Data.Text
+import qualified Data.Aeson
 
 -- | NodeSystemInfo is a set of ids/uuids to uniquely identify the node.
 data NodeSystemInfo = NodeSystemInfo

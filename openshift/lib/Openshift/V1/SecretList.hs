@@ -6,11 +6,11 @@
 
 module Openshift.V1.SecretList where
 
-import qualified Data.Aeson
 import GHC.Generics
 import Data.Text
 import Openshift.Unversioned.ListMeta
 import Openshift.V1.Secret
+import qualified Data.Aeson
 
 -- | SecretList is a list of Secret.
 data SecretList = SecretList

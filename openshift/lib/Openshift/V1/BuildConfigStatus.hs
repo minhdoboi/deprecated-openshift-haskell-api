@@ -6,8 +6,8 @@
 
 module Openshift.V1.BuildConfigStatus where
 
-import qualified Data.Aeson
 import GHC.Generics
+import qualified Data.Aeson
 
 -- | 
 data BuildConfigStatus = BuildConfigStatus

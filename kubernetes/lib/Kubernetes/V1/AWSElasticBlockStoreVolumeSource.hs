@@ -6,9 +6,9 @@
 
 module Kubernetes.V1.AWSElasticBlockStoreVolumeSource where
 
-import qualified Data.Aeson
 import GHC.Generics
 import Data.Text
+import qualified Data.Aeson
 
 -- | Represents a persistent disk resource in AWS.\n\nAn Amazon Elastic Block Store (EBS) must already be created, formatted, and reside in the same AWS zone as the kubelet before it can be mounted. Note: Amazon EBS volumes can be mounted to only one instance at a time.
 data AWSElasticBlockStoreVolumeSource = AWSElasticBlockStoreVolumeSource

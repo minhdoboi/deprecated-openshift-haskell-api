@@ -6,10 +6,10 @@
 
 module Openshift.V1.BuildStatus where
 
-import qualified Data.Aeson
 import GHC.Generics
 import Data.Text
 import Openshift.V1.ObjectReference
+import qualified Data.Aeson
 
 -- | 
 data BuildStatus = BuildStatus

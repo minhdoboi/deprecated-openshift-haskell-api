@@ -6,11 +6,11 @@
 
 module Kubernetes.V1.ServiceList where
 
-import qualified Data.Aeson
 import GHC.Generics
 import Data.Text
 import Kubernetes.Unversioned.ListMeta
 import Kubernetes.V1.Service
+import qualified Data.Aeson
 
 -- | ServiceList holds a list of services.
 data ServiceList = ServiceList

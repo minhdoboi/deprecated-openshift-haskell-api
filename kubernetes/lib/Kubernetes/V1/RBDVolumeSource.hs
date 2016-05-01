@@ -6,10 +6,10 @@
 
 module Kubernetes.V1.RBDVolumeSource where
 
-import qualified Data.Aeson
 import GHC.Generics
 import Data.Text
 import Kubernetes.V1.LocalObjectReference
+import qualified Data.Aeson
 
 -- | RBDVolumeSource represents a Rados Block Device Mount that lasts the lifetime of a pod
 data RBDVolumeSource = RBDVolumeSource

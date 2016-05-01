@@ -6,9 +6,9 @@
 
 module Kubernetes.V1.ContainerStateRunning where
 
-import qualified Data.Aeson
 import GHC.Generics
 import Data.Text
+import qualified Data.Aeson
 
 -- | ContainerStateRunning is a running state of a container.
 data ContainerStateRunning = ContainerStateRunning

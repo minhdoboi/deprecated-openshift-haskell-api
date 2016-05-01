@@ -6,11 +6,11 @@
 
 module Kubernetes.V1.PodStatus where
 
-import qualified Data.Aeson
 import GHC.Generics
 import Data.Text
 import Kubernetes.V1.ContainerStatus
 import Kubernetes.V1.PodCondition
+import qualified Data.Aeson
 
 -- | PodStatus represents information about the status of a pod. Status may trail the actual state of a system.
 data PodStatus = PodStatus

@@ -6,11 +6,11 @@
 
 module Openshift.V1.ImageImportStatus where
 
-import qualified Data.Aeson
 import GHC.Generics
 import Data.Text
 import Openshift.Unversioned.Status
 import Openshift.V1.Image
+import qualified Data.Aeson
 
 -- | 
 data ImageImportStatus = ImageImportStatus

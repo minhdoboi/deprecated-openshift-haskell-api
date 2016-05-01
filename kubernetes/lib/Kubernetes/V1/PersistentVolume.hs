@@ -6,12 +6,12 @@
 
 module Kubernetes.V1.PersistentVolume where
 
-import qualified Data.Aeson
 import GHC.Generics
 import Data.Text
 import Kubernetes.V1.ObjectMeta
 import Kubernetes.V1.PersistentVolumeSpec
 import Kubernetes.V1.PersistentVolumeStatus
+import qualified Data.Aeson
 
 -- | PersistentVolume (PV) is a storage resource provisioned by an administrator. It is analogous to a node. More info: http://releases.k8s.io/HEAD/docs/user-guide/persistent-volumes.md
 data PersistentVolume = PersistentVolume

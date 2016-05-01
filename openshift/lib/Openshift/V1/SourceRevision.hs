@@ -7,7 +7,6 @@
 
 module Openshift.V1.SourceRevision where
 
-import qualified Data.Aeson
 import GHC.Generics
 import Data.Text
 import Openshift.V1.GitSourceRevision

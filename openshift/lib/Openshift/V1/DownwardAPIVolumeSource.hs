@@ -6,9 +6,9 @@
 
 module Openshift.V1.DownwardAPIVolumeSource where
 
-import qualified Data.Aeson
 import GHC.Generics
 import Openshift.V1.DownwardAPIVolumeFile
+import qualified Data.Aeson
 
 -- | DownwardAPIVolumeSource represents a volume containing downward API info
 data DownwardAPIVolumeSource = DownwardAPIVolumeSource

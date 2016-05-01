@@ -6,10 +6,10 @@
 
 module Openshift.V1.NamedClusterRole where
 
-import qualified Data.Aeson
 import GHC.Generics
 import Data.Text
 import Openshift.V1.ClusterRole
+import qualified Data.Aeson
 
 -- | 
 data NamedClusterRole = NamedClusterRole

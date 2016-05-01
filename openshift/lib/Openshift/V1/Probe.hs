@@ -6,11 +6,11 @@
 
 module Openshift.V1.Probe where
 
-import qualified Data.Aeson
 import GHC.Generics
 import Openshift.V1.ExecAction
 import Openshift.V1.HTTPGetAction
 import Openshift.V1.TCPSocketAction
+import qualified Data.Aeson
 
 -- | Probe describes a health check to be performed against a container to determine whether it is alive or ready to receive traffic.
 data Probe = Probe

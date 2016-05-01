@@ -6,11 +6,11 @@
 
 module Openshift.V1.UserList where
 
-import qualified Data.Aeson
 import GHC.Generics
 import Data.Text
 import Openshift.Unversioned.ListMeta
 import Openshift.V1.User
+import qualified Data.Aeson
 
 -- | 
 data UserList = UserList

@@ -6,11 +6,11 @@
 
 module Kubernetes.V1.ComponentStatusList where
 
-import qualified Data.Aeson
 import GHC.Generics
 import Data.Text
 import Kubernetes.Unversioned.ListMeta
 import Kubernetes.V1.ComponentStatus
+import qualified Data.Aeson
 
 -- | Status of all the conditions for the component as a list of ComponentStatus objects.
 data ComponentStatusList = ComponentStatusList

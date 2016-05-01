@@ -6,12 +6,12 @@
 
 module Kubernetes.V1.ResourceQuota where
 
-import qualified Data.Aeson
 import GHC.Generics
 import Data.Text
 import Kubernetes.V1.ObjectMeta
 import Kubernetes.V1.ResourceQuotaSpec
 import Kubernetes.V1.ResourceQuotaStatus
+import qualified Data.Aeson
 
 -- | ResourceQuota sets aggregate quota restrictions enforced per namespace
 data ResourceQuota = ResourceQuota

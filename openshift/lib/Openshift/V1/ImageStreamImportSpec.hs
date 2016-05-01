@@ -7,7 +7,6 @@
 
 module Openshift.V1.ImageStreamImportSpec where
 
-import qualified Data.Aeson
 import GHC.Generics
 import Openshift.V1.ImageImportSpec
 import Openshift.V1.RepositoryImportSpec

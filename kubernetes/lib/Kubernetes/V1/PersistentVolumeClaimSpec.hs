@@ -6,11 +6,11 @@
 
 module Kubernetes.V1.PersistentVolumeClaimSpec where
 
-import qualified Data.Aeson
 import GHC.Generics
 import Data.Text
 import Kubernetes.V1.PersistentVolumeAccessMode
 import Kubernetes.V1.ResourceRequirements
+import qualified Data.Aeson
 
 -- | PersistentVolumeClaimSpec describes the common attributes of storage devices and allows a Source for provider-specific attributes
 data PersistentVolumeClaimSpec = PersistentVolumeClaimSpec

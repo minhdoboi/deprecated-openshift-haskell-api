@@ -6,9 +6,9 @@
 
 module Kubernetes.V1.ResourceRequirements where
 
-import qualified Data.Aeson
 import GHC.Generics
 import Kubernetes.Any
+import qualified Data.Aeson
 
 -- | ResourceRequirements describes the compute resource requirements.
 data ResourceRequirements = ResourceRequirements

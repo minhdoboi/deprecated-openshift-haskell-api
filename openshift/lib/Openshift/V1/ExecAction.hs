@@ -6,9 +6,9 @@
 
 module Openshift.V1.ExecAction where
 
-import qualified Data.Aeson
 import GHC.Generics
 import Data.Text
+import qualified Data.Aeson
 
 -- | ExecAction describes a \"run in container\" action.
 data ExecAction = ExecAction

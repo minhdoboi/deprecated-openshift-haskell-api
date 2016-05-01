@@ -6,12 +6,12 @@
 
 module Openshift.V1.TagReference where
 
-import qualified Data.Aeson
 import GHC.Generics
 import Data.Text
 import Openshift.Any
 import Openshift.V1.ObjectReference
 import Openshift.V1.TagImportPolicy
+import qualified Data.Aeson
 
 -- | 
 data TagReference = TagReference

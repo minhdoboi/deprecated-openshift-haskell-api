@@ -6,7 +6,6 @@
 
 module Openshift.V1.BuildSpec where
 
-import qualified Data.Aeson
 import GHC.Generics
 import Data.Text
 import Openshift.V1.BuildOutput
@@ -14,6 +13,7 @@ import Openshift.V1.BuildSource
 import Openshift.V1.BuildStrategy
 import Openshift.V1.ResourceRequirements
 import Openshift.V1.SourceRevision
+import qualified Data.Aeson
 
 -- | 
 data BuildSpec = BuildSpec

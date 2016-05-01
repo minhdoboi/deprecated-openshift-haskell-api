@@ -6,9 +6,9 @@
 
 module Openshift.V1.GitBuildSource where
 
-import qualified Data.Aeson
 import GHC.Generics
 import Data.Text
+import qualified Data.Aeson
 
 -- | 
 data GitBuildSource = GitBuildSource

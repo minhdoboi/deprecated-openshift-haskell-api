@@ -6,12 +6,12 @@
 
 module Kubernetes.V1.Pod where
 
-import qualified Data.Aeson
 import GHC.Generics
 import Data.Text
 import Kubernetes.V1.ObjectMeta
 import Kubernetes.V1.PodSpec
 import Kubernetes.V1.PodStatus
+import qualified Data.Aeson
 
 -- | Pod is a collection of containers that can run on a host. This resource is created by clients and scheduled onto hosts.
 data Pod = Pod

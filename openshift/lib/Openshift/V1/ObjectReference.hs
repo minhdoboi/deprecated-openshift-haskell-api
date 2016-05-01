@@ -6,9 +6,9 @@
 
 module Openshift.V1.ObjectReference where
 
-import qualified Data.Aeson
 import GHC.Generics
 import Data.Text
+import qualified Data.Aeson
 
 -- | ObjectReference contains enough information to let you inspect or modify the referred object.
 data ObjectReference = ObjectReference

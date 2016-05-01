@@ -6,11 +6,11 @@
 
 module Kubernetes.V1.EndpointsList where
 
-import qualified Data.Aeson
 import GHC.Generics
 import Data.Text
 import Kubernetes.Unversioned.ListMeta
 import Kubernetes.V1.Endpoints
+import qualified Data.Aeson
 
 -- | EndpointsList is a list of endpoints.
 data EndpointsList = EndpointsList

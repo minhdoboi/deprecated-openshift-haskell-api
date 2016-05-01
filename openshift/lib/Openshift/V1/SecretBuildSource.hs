@@ -6,10 +6,10 @@
 
 module Openshift.V1.SecretBuildSource where
 
-import qualified Data.Aeson
 import GHC.Generics
 import Data.Text
 import Openshift.V1.LocalObjectReference
+import qualified Data.Aeson
 
 -- | 
 data SecretBuildSource = SecretBuildSource

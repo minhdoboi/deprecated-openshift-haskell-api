@@ -6,11 +6,11 @@
 
 module Openshift.V1.ClusterPolicy where
 
-import qualified Data.Aeson
 import GHC.Generics
 import Data.Text
 import Kubernetes.V1.ObjectMeta
 import Openshift.V1.NamedClusterRole
+import qualified Data.Aeson
 
 -- | 
 data ClusterPolicy = ClusterPolicy

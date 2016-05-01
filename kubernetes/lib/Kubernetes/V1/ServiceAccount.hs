@@ -6,12 +6,12 @@
 
 module Kubernetes.V1.ServiceAccount where
 
-import qualified Data.Aeson
 import GHC.Generics
 import Data.Text
 import Kubernetes.V1.LocalObjectReference
 import Kubernetes.V1.ObjectMeta
 import Kubernetes.V1.ObjectReference
+import qualified Data.Aeson
 
 -- | ServiceAccount binds together: * a name, understood by users, and perhaps by peripheral systems, for an identity * a principal that can be authenticated and authorized * a set of secrets
 data ServiceAccount = ServiceAccount

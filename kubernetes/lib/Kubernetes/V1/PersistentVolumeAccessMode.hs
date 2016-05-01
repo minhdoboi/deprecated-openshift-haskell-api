@@ -6,8 +6,8 @@
 
 module Kubernetes.V1.PersistentVolumeAccessMode where
 
-import qualified Data.Aeson
 import GHC.Generics
+import qualified Data.Aeson
 
 -- | 
 data PersistentVolumeAccessMode = PersistentVolumeAccessMode

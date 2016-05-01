@@ -6,9 +6,9 @@
 
 module Kubernetes.V1.NodeDaemonEndpoints where
 
-import qualified Data.Aeson
 import GHC.Generics
 import Kubernetes.V1.DaemonEndpoint
+import qualified Data.Aeson
 
 -- | NodeDaemonEndpoints lists ports opened by daemons running on the Node.
 data NodeDaemonEndpoints = NodeDaemonEndpoints

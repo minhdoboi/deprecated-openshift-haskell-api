@@ -6,10 +6,10 @@
 
 module Openshift.V1.BuildOutput where
 
-import qualified Data.Aeson
 import GHC.Generics
 import Openshift.V1.LocalObjectReference
 import Openshift.V1.ObjectReference
+import qualified Data.Aeson
 
 -- | 
 data BuildOutput = BuildOutput

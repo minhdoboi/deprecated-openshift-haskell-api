@@ -6,9 +6,9 @@
 
 module Kubernetes.V1.LocalObjectReference where
 
-import qualified Data.Aeson
 import GHC.Generics
 import Data.Text
+import qualified Data.Aeson
 
 -- | LocalObjectReference contains enough information to let you locate the referenced object inside the same namespace.
 data LocalObjectReference = LocalObjectReference

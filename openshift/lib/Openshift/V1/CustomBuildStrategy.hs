@@ -6,13 +6,13 @@
 
 module Openshift.V1.CustomBuildStrategy where
 
-import qualified Data.Aeson
 import GHC.Generics
 import Data.Text
 import Openshift.V1.EnvVar
 import Openshift.V1.LocalObjectReference
 import Openshift.V1.ObjectReference
 import Openshift.V1.SecretSpec
+import qualified Data.Aeson
 
 -- | 
 data CustomBuildStrategy = CustomBuildStrategy

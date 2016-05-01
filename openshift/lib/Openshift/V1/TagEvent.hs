@@ -6,9 +6,9 @@
 
 module Openshift.V1.TagEvent where
 
-import qualified Data.Aeson
 import GHC.Generics
 import Data.Text
+import qualified Data.Aeson
 
 -- | 
 data TagEvent = TagEvent

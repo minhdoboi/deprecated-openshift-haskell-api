@@ -6,11 +6,11 @@
 
 module Openshift.V1.ClusterRoleList where
 
-import qualified Data.Aeson
 import GHC.Generics
 import Data.Text
 import Openshift.Unversioned.ListMeta
 import Openshift.V1.ClusterRole
+import qualified Data.Aeson
 
 -- | 
 data ClusterRoleList = ClusterRoleList

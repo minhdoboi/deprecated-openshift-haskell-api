@@ -6,9 +6,9 @@
 
 module Openshift.V1.RecreateDeploymentStrategyParams where
 
-import qualified Data.Aeson
 import GHC.Generics
 import Openshift.V1.LifecycleHook
+import qualified Data.Aeson
 
 -- | 
 data RecreateDeploymentStrategyParams = RecreateDeploymentStrategyParams

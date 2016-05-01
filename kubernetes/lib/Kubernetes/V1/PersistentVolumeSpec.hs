@@ -6,7 +6,6 @@
 
 module Kubernetes.V1.PersistentVolumeSpec where
 
-import qualified Data.Aeson
 import GHC.Generics
 import Data.Text
 import Kubernetes.Any
@@ -23,6 +22,7 @@ import Kubernetes.V1.NFSVolumeSource
 import Kubernetes.V1.ObjectReference
 import Kubernetes.V1.PersistentVolumeAccessMode
 import Kubernetes.V1.RBDVolumeSource
+import qualified Data.Aeson
 
 -- | PersistentVolumeSpec is the specification of a persistent volume.
 data PersistentVolumeSpec = PersistentVolumeSpec

@@ -6,9 +6,9 @@
 
 module Kubernetes.V1.PodSecurityContext where
 
-import qualified Data.Aeson
 import GHC.Generics
 import Kubernetes.V1.SELinuxOptions
+import qualified Data.Aeson
 
 -- | PodSecurityContext holds pod-level security attributes and common container settings. Some fields are also present in container.securityContext.  Field values of container.securityContext take precedence over field values of PodSecurityContext.
 data PodSecurityContext = PodSecurityContext

@@ -6,9 +6,9 @@
 
 module Kubernetes.V1.ContainerStateWaiting where
 
-import qualified Data.Aeson
 import GHC.Generics
 import Data.Text
+import qualified Data.Aeson
 
 -- | ContainerStateWaiting is a waiting state of a container.
 data ContainerStateWaiting = ContainerStateWaiting

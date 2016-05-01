@@ -6,11 +6,11 @@
 
 module Kubernetes.V1.PersistentVolumeClaimList where
 
-import qualified Data.Aeson
 import GHC.Generics
 import Data.Text
 import Kubernetes.Unversioned.ListMeta
 import Kubernetes.V1.PersistentVolumeClaim
+import qualified Data.Aeson
 
 -- | PersistentVolumeClaimList is a list of PersistentVolumeClaim items.
 data PersistentVolumeClaimList = PersistentVolumeClaimList

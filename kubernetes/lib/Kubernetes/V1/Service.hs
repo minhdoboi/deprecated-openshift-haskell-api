@@ -6,12 +6,12 @@
 
 module Kubernetes.V1.Service where
 
-import qualified Data.Aeson
 import GHC.Generics
 import Data.Text
 import Kubernetes.V1.ObjectMeta
 import Kubernetes.V1.ServiceSpec
 import Kubernetes.V1.ServiceStatus
+import qualified Data.Aeson
 
 -- | Service is a named abstraction of software service (for example, mysql) consisting of local port (for example 3306) that the proxy listens on, and the selector that determines which pods will answer requests sent through the proxy.
 data Service = Service

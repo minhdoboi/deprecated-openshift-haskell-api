@@ -6,12 +6,12 @@
 
 module Openshift.V1.Identity where
 
-import qualified Data.Aeson
 import GHC.Generics
 import Data.Text
 import Kubernetes.V1.ObjectMeta
 import Openshift.Any
 import Openshift.V1.ObjectReference
+import qualified Data.Aeson
 
 -- | 
 data Identity = Identity

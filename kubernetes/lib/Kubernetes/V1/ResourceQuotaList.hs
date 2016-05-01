@@ -6,11 +6,11 @@
 
 module Kubernetes.V1.ResourceQuotaList where
 
-import qualified Data.Aeson
 import GHC.Generics
 import Data.Text
 import Kubernetes.Unversioned.ListMeta
 import Kubernetes.V1.ResourceQuota
+import qualified Data.Aeson
 
 -- | ResourceQuotaList is a list of ResourceQuota items.
 data ResourceQuotaList = ResourceQuotaList

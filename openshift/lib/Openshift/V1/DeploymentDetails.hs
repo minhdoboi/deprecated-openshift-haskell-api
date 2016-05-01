@@ -6,10 +6,10 @@
 
 module Openshift.V1.DeploymentDetails where
 
-import qualified Data.Aeson
 import GHC.Generics
 import Data.Text
 import Openshift.V1.DeploymentCause
+import qualified Data.Aeson
 
 -- | 
 data DeploymentDetails = DeploymentDetails

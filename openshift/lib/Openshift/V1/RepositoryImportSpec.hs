@@ -6,10 +6,10 @@
 
 module Openshift.V1.RepositoryImportSpec where
 
-import qualified Data.Aeson
 import GHC.Generics
 import Openshift.V1.ObjectReference
 import Openshift.V1.TagImportPolicy
+import qualified Data.Aeson
 
 -- | 
 data RepositoryImportSpec = RepositoryImportSpec

@@ -6,9 +6,9 @@
 
 module Kubernetes.V1.ServiceStatus where
 
-import qualified Data.Aeson
 import GHC.Generics
 import Kubernetes.V1.LoadBalancerStatus
+import qualified Data.Aeson
 
 -- | ServiceStatus represents the current status of a service.
 data ServiceStatus = ServiceStatus

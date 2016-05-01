@@ -6,9 +6,9 @@
 
 module Openshift.V1beta1.ScaleStatus where
 
-import qualified Data.Aeson
 import GHC.Generics
 import Openshift.Any
+import qualified Data.Aeson
 
 -- | represents the current status of a scale subresource.
 data ScaleStatus = ScaleStatus

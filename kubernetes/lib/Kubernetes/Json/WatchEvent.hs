@@ -7,7 +7,6 @@
 
 module Kubernetes.Json.WatchEvent where
 
-import qualified Data.Aeson
 import GHC.Generics
 import Data.Text
 import Data.Aeson.TH (deriveJSON, defaultOptions, fieldLabelModifier)

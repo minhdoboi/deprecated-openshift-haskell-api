@@ -6,11 +6,11 @@
 
 module Openshift.V1.ImageSource where
 
-import qualified Data.Aeson
 import GHC.Generics
 import Openshift.V1.ImageSourcePath
 import Openshift.V1.LocalObjectReference
 import Openshift.V1.ObjectReference
+import qualified Data.Aeson
 
 -- | 
 data ImageSource = ImageSource

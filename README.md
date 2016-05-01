@@ -16,6 +16,7 @@ The only thing I tested is listing the projects & pods (cf example which is not 
 - v1.XXX => V1/XXX.hs
 - non required property are wrapped in Maybe
 - a parameter has been added for header token bearer
+- if description contains "name or number", property has type int or text (probe port)
 
 ## Hacks
 There are some hacks in scripts/codegen.sh and it needs probably a few more hacks.

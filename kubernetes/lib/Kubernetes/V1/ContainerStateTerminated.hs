@@ -6,9 +6,9 @@
 
 module Kubernetes.V1.ContainerStateTerminated where
 
-import qualified Data.Aeson
 import GHC.Generics
 import Data.Text
+import qualified Data.Aeson
 
 -- | ContainerStateTerminated is a terminated state of a container.
 data ContainerStateTerminated = ContainerStateTerminated

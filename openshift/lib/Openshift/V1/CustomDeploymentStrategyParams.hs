@@ -6,10 +6,10 @@
 
 module Openshift.V1.CustomDeploymentStrategyParams where
 
-import qualified Data.Aeson
 import GHC.Generics
 import Data.Text
 import Openshift.V1.EnvVar
+import qualified Data.Aeson
 
 -- | 
 data CustomDeploymentStrategyParams = CustomDeploymentStrategyParams

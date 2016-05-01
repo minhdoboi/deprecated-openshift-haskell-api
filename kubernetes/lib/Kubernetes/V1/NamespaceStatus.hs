@@ -6,9 +6,9 @@
 
 module Kubernetes.V1.NamespaceStatus where
 
-import qualified Data.Aeson
 import GHC.Generics
 import Data.Text
+import qualified Data.Aeson
 
 -- | NamespaceStatus is information about the current status of a Namespace.
 data NamespaceStatus = NamespaceStatus

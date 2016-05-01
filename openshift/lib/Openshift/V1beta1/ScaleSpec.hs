@@ -6,8 +6,8 @@
 
 module Openshift.V1beta1.ScaleSpec where
 
-import qualified Data.Aeson
 import GHC.Generics
+import qualified Data.Aeson
 
 -- | describes the attributes of a scale subresource
 data ScaleSpec = ScaleSpec

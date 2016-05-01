@@ -6,11 +6,11 @@
 
 module Openshift.V1.OAuthAccessTokenList where
 
-import qualified Data.Aeson
 import GHC.Generics
 import Data.Text
 import Openshift.Unversioned.ListMeta
 import Openshift.V1.OAuthAccessToken
+import qualified Data.Aeson
 
 -- | 
 data OAuthAccessTokenList = OAuthAccessTokenList

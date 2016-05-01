@@ -7,7 +7,6 @@
 
 module Kubernetes.V1.FSGroupStrategyOptions where
 
-import qualified Data.Aeson
 import GHC.Generics
 import Data.Text
 import Kubernetes.V1.IDRange

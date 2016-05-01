@@ -6,8 +6,8 @@
 
 module Openshift.Unversioned.Patch where
 
-import qualified Data.Aeson
 import GHC.Generics
+import qualified Data.Aeson
 
 -- | Patch is provided to give a concrete name and type to the Kubernetes PATCH request body.
 data Patch = Patch

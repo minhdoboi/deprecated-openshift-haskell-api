@@ -6,10 +6,10 @@
 
 module Kubernetes.V1.PodTemplateSpec where
 
-import qualified Data.Aeson
 import GHC.Generics
 import Kubernetes.V1.ObjectMeta
 import Kubernetes.V1.PodSpec
+import qualified Data.Aeson
 
 -- | PodTemplateSpec describes the data a pod should have when created from a template
 data PodTemplateSpec = PodTemplateSpec

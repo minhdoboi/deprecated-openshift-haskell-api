@@ -6,9 +6,9 @@
 
 module Openshift.V1.EmptyDirVolumeSource where
 
-import qualified Data.Aeson
 import GHC.Generics
 import Data.Text
+import qualified Data.Aeson
 
 -- | EmptyDirVolumeSource is temporary directory that shares a pod's lifetime.
 data EmptyDirVolumeSource = EmptyDirVolumeSource

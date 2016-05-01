@@ -6,8 +6,8 @@
 
 module Openshift.Runtime.RawExtension where
 
-import qualified Data.Aeson
 import GHC.Generics
+import qualified Data.Aeson
 
 -- | this may be any JSON object with a 'kind' and 'apiVersion' field; and is preserved unmodified by processing
 data RawExtension = RawExtension

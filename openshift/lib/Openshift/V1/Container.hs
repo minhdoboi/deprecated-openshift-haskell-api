@@ -6,7 +6,6 @@
 
 module Openshift.V1.Container where
 
-import qualified Data.Aeson
 import GHC.Generics
 import Data.Text
 import Openshift.V1.ContainerPort
@@ -16,6 +15,7 @@ import Openshift.V1.Probe
 import Openshift.V1.ResourceRequirements
 import Openshift.V1.SecurityContext
 import Openshift.V1.VolumeMount
+import qualified Data.Aeson
 
 -- | A single application container that you want to run within a pod.
 data Container = Container

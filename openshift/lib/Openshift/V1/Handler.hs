@@ -6,11 +6,11 @@
 
 module Openshift.V1.Handler where
 
-import qualified Data.Aeson
 import GHC.Generics
 import Openshift.V1.ExecAction
 import Openshift.V1.HTTPGetAction
 import Openshift.V1.TCPSocketAction
+import qualified Data.Aeson
 
 -- | Handler defines a specific action that should be taken
 data Handler = Handler

@@ -6,9 +6,9 @@
 
 module Kubernetes.V1.DeleteOptions where
 
-import qualified Data.Aeson
 import GHC.Generics
 import Data.Text
+import qualified Data.Aeson
 
 -- | DeleteOptions may be provided when deleting an API object
 data DeleteOptions = DeleteOptions

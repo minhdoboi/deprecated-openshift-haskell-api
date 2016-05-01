@@ -6,9 +6,9 @@
 
 module Kubernetes.V1.EventSource where
 
-import qualified Data.Aeson
 import GHC.Generics
 import Data.Text
+import qualified Data.Aeson
 
 -- | EventSource contains information for an event.
 data EventSource = EventSource

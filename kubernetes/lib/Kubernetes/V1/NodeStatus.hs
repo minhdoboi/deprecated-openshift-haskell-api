@@ -6,7 +6,6 @@
 
 module Kubernetes.V1.NodeStatus where
 
-import qualified Data.Aeson
 import GHC.Generics
 import Data.Text
 import Kubernetes.Any
@@ -14,6 +13,7 @@ import Kubernetes.V1.NodeAddress
 import Kubernetes.V1.NodeCondition
 import Kubernetes.V1.NodeDaemonEndpoints
 import Kubernetes.V1.NodeSystemInfo
+import qualified Data.Aeson
 
 -- | NodeStatus is information about the current status of a node.
 data NodeStatus = NodeStatus

@@ -6,10 +6,10 @@
 
 module Openshift.V1.RollingDeploymentStrategyParams where
 
-import qualified Data.Aeson
 import GHC.Generics
 import Data.Text
 import Openshift.V1.LifecycleHook
+import qualified Data.Aeson
 
 -- | 
 data RollingDeploymentStrategyParams = RollingDeploymentStrategyParams

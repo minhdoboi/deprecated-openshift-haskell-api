@@ -6,12 +6,12 @@
 
 module Openshift.V1.RouteSpec where
 
-import qualified Data.Aeson
 import GHC.Generics
 import Data.Text
 import Openshift.V1.ObjectReference
 import Openshift.V1.RoutePort
 import Openshift.V1.TLSConfig
+import qualified Data.Aeson
 
 -- | 
 data RouteSpec = RouteSpec

@@ -6,10 +6,10 @@
 
 module Openshift.V1.EnvVar where
 
-import qualified Data.Aeson
 import GHC.Generics
 import Data.Text
 import Openshift.V1.EnvVarSource
+import qualified Data.Aeson
 
 -- | EnvVar represents an environment variable present in a Container.
 data EnvVar = EnvVar

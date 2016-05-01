@@ -6,9 +6,9 @@
 
 module Kubernetes.V1.VolumeMount where
 
-import qualified Data.Aeson
 import GHC.Generics
 import Data.Text
+import qualified Data.Aeson
 
 -- | VolumeMount describes a mounting of a Volume within a container.
 data VolumeMount = VolumeMount

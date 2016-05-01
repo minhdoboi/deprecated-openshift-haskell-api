@@ -6,10 +6,10 @@
 
 module Kubernetes.V1.EndpointAddress where
 
-import qualified Data.Aeson
 import GHC.Generics
 import Data.Text
 import Kubernetes.V1.ObjectReference
+import qualified Data.Aeson
 
 -- | EndpointAddress is a tuple that describes single IP address.
 data EndpointAddress = EndpointAddress

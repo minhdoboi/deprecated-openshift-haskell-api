@@ -6,8 +6,8 @@
 
 module Openshift.V1.ProjectSpec where
 
-import qualified Data.Aeson
 import GHC.Generics
+import qualified Data.Aeson
 
 -- | 
 data ProjectSpec = ProjectSpec

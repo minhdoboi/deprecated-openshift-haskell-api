@@ -6,11 +6,11 @@
 
 module Kubernetes.V1.NodeList where
 
-import qualified Data.Aeson
 import GHC.Generics
 import Data.Text
 import Kubernetes.Unversioned.ListMeta
 import Kubernetes.V1.Node
+import qualified Data.Aeson
 
 -- | NodeList is the whole list of all Nodes which have been registered with master.
 data NodeList = NodeList

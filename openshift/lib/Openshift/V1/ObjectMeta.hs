@@ -6,10 +6,10 @@
 
 module Openshift.V1.ObjectMeta where
 
-import qualified Data.Aeson
 import GHC.Generics
 import Data.Text
 import Openshift.Any
+import qualified Data.Aeson
 
 -- | ObjectMeta is metadata that all persisted resources must have, which includes all objects users must create.
 data ObjectMeta = ObjectMeta

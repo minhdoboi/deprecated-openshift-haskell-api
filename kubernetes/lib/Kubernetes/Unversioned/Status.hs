@@ -6,11 +6,11 @@
 
 module Kubernetes.Unversioned.Status where
 
-import qualified Data.Aeson
 import GHC.Generics
 import Data.Text
 import Kubernetes.Unversioned.ListMeta
 import Kubernetes.Unversioned.StatusDetails
+import qualified Data.Aeson
 
 -- | Status is a return value for calls that don't return other objects.
 data Status = Status

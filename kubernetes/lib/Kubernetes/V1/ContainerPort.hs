@@ -6,9 +6,9 @@
 
 module Kubernetes.V1.ContainerPort where
 
-import qualified Data.Aeson
 import GHC.Generics
 import Data.Text
+import qualified Data.Aeson
 
 -- | ContainerPort represents a network port in a single container.
 data ContainerPort = ContainerPort

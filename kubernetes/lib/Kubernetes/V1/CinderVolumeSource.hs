@@ -6,9 +6,9 @@
 
 module Kubernetes.V1.CinderVolumeSource where
 
-import qualified Data.Aeson
 import GHC.Generics
 import Data.Text
+import qualified Data.Aeson
 
 -- | CinderVolumeSource represents a cinder volume resource in Openstack. A Cinder volume must exist before mounting to a container. The volume must also be in the same region as the kubelet.
 data CinderVolumeSource = CinderVolumeSource

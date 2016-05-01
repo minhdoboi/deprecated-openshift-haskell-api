@@ -6,9 +6,9 @@
 
 module Kubernetes.V1.LimitRangeSpec where
 
-import qualified Data.Aeson
 import GHC.Generics
 import Kubernetes.V1.LimitRangeItem
+import qualified Data.Aeson
 
 -- | LimitRangeSpec defines a min/max usage limit for resources that match on kind.
 data LimitRangeSpec = LimitRangeSpec

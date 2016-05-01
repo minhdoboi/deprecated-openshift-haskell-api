@@ -6,7 +6,6 @@
 
 module Kubernetes.V1.Container where
 
-import qualified Data.Aeson
 import GHC.Generics
 import Data.Text
 import Kubernetes.V1.ContainerPort
@@ -16,6 +15,7 @@ import Kubernetes.V1.Probe
 import Kubernetes.V1.ResourceRequirements
 import Kubernetes.V1.SecurityContext
 import Kubernetes.V1.VolumeMount
+import qualified Data.Aeson
 
 -- | A single application container that you want to run within a pod.
 data Container = Container

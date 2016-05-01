@@ -6,9 +6,9 @@
 
 module Openshift.V1.ISCSIVolumeSource where
 
-import qualified Data.Aeson
 import GHC.Generics
 import Data.Text
+import qualified Data.Aeson
 
 -- | ISCSIVolumeSource describes an ISCSI Disk can only be mounted as read/write once.
 data ISCSIVolumeSource = ISCSIVolumeSource

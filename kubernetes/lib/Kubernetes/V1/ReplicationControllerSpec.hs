@@ -6,10 +6,10 @@
 
 module Kubernetes.V1.ReplicationControllerSpec where
 
-import qualified Data.Aeson
 import GHC.Generics
 import Kubernetes.Any
 import Kubernetes.V1.PodTemplateSpec
+import qualified Data.Aeson
 
 -- | ReplicationControllerSpec is the specification of a replication controller.
 data ReplicationControllerSpec = ReplicationControllerSpec

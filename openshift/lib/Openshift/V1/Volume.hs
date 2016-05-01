@@ -6,7 +6,6 @@
 
 module Openshift.V1.Volume where
 
-import qualified Data.Aeson
 import GHC.Generics
 import Data.Text
 import Openshift.V1.AWSElasticBlockStoreVolumeSource
@@ -26,6 +25,7 @@ import Openshift.V1.NFSVolumeSource
 import Openshift.V1.PersistentVolumeClaimVolumeSource
 import Openshift.V1.RBDVolumeSource
 import Openshift.V1.SecretVolumeSource
+import qualified Data.Aeson
 
 -- | Volume represents a named volume in a pod that may be accessed by any container in the pod.
 data Volume = Volume

@@ -6,8 +6,8 @@
 
 module Kubernetes.V1.NamespaceSpec where
 
-import qualified Data.Aeson
 import GHC.Generics
+import qualified Data.Aeson
 
 -- | NamespaceSpec describes the attributes on a Namespace.
 data NamespaceSpec = NamespaceSpec

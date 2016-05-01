@@ -6,12 +6,12 @@
 
 module Kubernetes.V1.ReplicationController where
 
-import qualified Data.Aeson
 import GHC.Generics
 import Data.Text
 import Kubernetes.V1.ObjectMeta
 import Kubernetes.V1.ReplicationControllerSpec
 import Kubernetes.V1.ReplicationControllerStatus
+import qualified Data.Aeson
 
 -- | ReplicationController represents the configuration of a replication controller.
 data ReplicationController = ReplicationController

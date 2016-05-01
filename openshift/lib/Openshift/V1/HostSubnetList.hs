@@ -6,11 +6,11 @@
 
 module Openshift.V1.HostSubnetList where
 
-import qualified Data.Aeson
 import GHC.Generics
 import Data.Text
 import Openshift.Unversioned.ListMeta
 import Openshift.V1.HostSubnet
+import qualified Data.Aeson
 
 -- | 
 data HostSubnetList = HostSubnetList

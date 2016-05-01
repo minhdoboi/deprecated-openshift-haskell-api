@@ -6,11 +6,11 @@
 
 module Kubernetes.V1.ContainerState where
 
-import qualified Data.Aeson
 import GHC.Generics
 import Kubernetes.V1.ContainerStateRunning
 import Kubernetes.V1.ContainerStateTerminated
 import Kubernetes.V1.ContainerStateWaiting
+import qualified Data.Aeson
 
 -- | ContainerState holds a possible state of container. Only one of its members may be specified. If none of them is specified, the default one is ContainerStateWaiting.
 data ContainerState = ContainerState

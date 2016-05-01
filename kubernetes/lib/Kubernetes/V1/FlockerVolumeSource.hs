@@ -6,9 +6,9 @@
 
 module Kubernetes.V1.FlockerVolumeSource where
 
-import qualified Data.Aeson
 import GHC.Generics
 import Data.Text
+import qualified Data.Aeson
 
 -- | FlockerVolumeSource represents a Flocker volume mounted by the Flocker agent.
 data FlockerVolumeSource = FlockerVolumeSource

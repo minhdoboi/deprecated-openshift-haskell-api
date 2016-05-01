@@ -6,11 +6,11 @@
 
 module Kubernetes.V1.PodList where
 
-import qualified Data.Aeson
 import GHC.Generics
 import Data.Text
 import Kubernetes.Unversioned.ListMeta
 import Kubernetes.V1.Pod
+import qualified Data.Aeson
 
 -- | PodList is a list of Pods.
 data PodList = PodList

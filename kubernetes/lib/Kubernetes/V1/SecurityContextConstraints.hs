@@ -6,7 +6,6 @@
 
 module Kubernetes.V1.SecurityContextConstraints where
 
-import qualified Data.Aeson
 import GHC.Generics
 import Data.Text
 import Kubernetes.V1.Capability
@@ -15,6 +14,7 @@ import Kubernetes.V1.ObjectMeta
 import Kubernetes.V1.RunAsUserStrategyOptions
 import Kubernetes.V1.SELinuxContextStrategyOptions
 import Kubernetes.V1.SupplementalGroupsStrategyOptions
+import qualified Data.Aeson
 
 -- | 
 data SecurityContextConstraints = SecurityContextConstraints

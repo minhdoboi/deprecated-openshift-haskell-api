@@ -6,11 +6,11 @@
 
 module Kubernetes.V1.EventList where
 
-import qualified Data.Aeson
 import GHC.Generics
 import Data.Text
 import Kubernetes.Unversioned.ListMeta
 import Kubernetes.V1.Event
+import qualified Data.Aeson
 
 -- | EventList is a list of events.
 data EventList = EventList

@@ -6,9 +6,9 @@
 
 module Openshift.V1.DeploymentCauseImageTrigger where
 
-import qualified Data.Aeson
 import GHC.Generics
 import Openshift.V1.ObjectReference
+import qualified Data.Aeson
 
 -- | 
 data DeploymentCauseImageTrigger = DeploymentCauseImageTrigger

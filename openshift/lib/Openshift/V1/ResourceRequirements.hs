@@ -6,9 +6,9 @@
 
 module Openshift.V1.ResourceRequirements where
 
-import qualified Data.Aeson
 import GHC.Generics
 import Openshift.Any
+import qualified Data.Aeson
 
 -- | ResourceRequirements describes the compute resource requirements.
 data ResourceRequirements = ResourceRequirements

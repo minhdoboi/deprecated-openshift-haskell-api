@@ -6,12 +6,12 @@
 
 module Openshift.V1.DeploymentConfigSpec where
 
-import qualified Data.Aeson
 import GHC.Generics
 import Openshift.Any
 import Openshift.V1.DeploymentStrategy
 import Openshift.V1.DeploymentTriggerPolicy
 import Openshift.V1.PodTemplateSpec
+import qualified Data.Aeson
 
 -- | 
 data DeploymentConfigSpec = DeploymentConfigSpec

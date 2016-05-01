@@ -6,9 +6,9 @@
 
 module Openshift.V1.MetadataVolumeSource where
 
-import qualified Data.Aeson
 import GHC.Generics
 import Openshift.V1.MetadataFile
+import qualified Data.Aeson
 
 -- | 
 data MetadataVolumeSource = MetadataVolumeSource

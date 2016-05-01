@@ -6,9 +6,9 @@
 
 module Openshift.V1.Capabilities where
 
-import qualified Data.Aeson
 import GHC.Generics
 import Openshift.V1.Capability
+import qualified Data.Aeson
 
 -- | Adds and removes POSIX capabilities from running containers.
 data Capabilities = Capabilities

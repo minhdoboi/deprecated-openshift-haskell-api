@@ -6,9 +6,9 @@
 
 module Kubernetes.V1.LoadBalancerStatus where
 
-import qualified Data.Aeson
 import GHC.Generics
 import Kubernetes.V1.LoadBalancerIngress
+import qualified Data.Aeson
 
 -- | LoadBalancerStatus represents the status of a load-balancer.
 data LoadBalancerStatus = LoadBalancerStatus

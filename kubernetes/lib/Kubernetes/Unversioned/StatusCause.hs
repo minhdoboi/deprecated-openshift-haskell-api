@@ -6,9 +6,9 @@
 
 module Kubernetes.Unversioned.StatusCause where
 
-import qualified Data.Aeson
 import GHC.Generics
 import Data.Text
+import qualified Data.Aeson
 
 -- | StatusCause provides more information about an api.Status failure, including cases when multiple errors are encountered.
 data StatusCause = StatusCause

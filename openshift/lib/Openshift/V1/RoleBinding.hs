@@ -6,11 +6,11 @@
 
 module Openshift.V1.RoleBinding where
 
-import qualified Data.Aeson
 import GHC.Generics
 import Data.Text
 import Kubernetes.V1.ObjectMeta
 import Openshift.V1.ObjectReference
+import qualified Data.Aeson
 
 -- | 
 data RoleBinding = RoleBinding
